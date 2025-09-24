@@ -12,10 +12,12 @@ a {
 body {
   overflow-x: hidden;
 }
+
 /* Отключаем стандартный стиль чекбокса */
 .checkbox-input {
   appearance: none;
-  -webkit-appearance: none; /* для поддержки в Safari */
+  -webkit-appearance: none;
+  /* для поддержки в Safari */
 }
 
 /* Стилизация чекбокса */
@@ -62,7 +64,7 @@ body {
   cursor: not-allowed;
 }
 
-.checkbox-input:disabled ~ .checkbox-label {
+.checkbox-input:disabled~.checkbox-label {
   opacity: 0.5;
   cursor: not-allowed;
 }
@@ -70,7 +72,8 @@ body {
 .checkbox-content {
   gap: 8px;
   display: flex;
-  input{
+
+  input {
     margin: auto;
     min-height: 16px;
     min-width: 16px;
@@ -78,17 +81,20 @@ body {
     max-width: 16px;
     padding: 0 !important;
   }
+
   p {
     margin-bottom: 0;
     max-width: 100% !important;
     font-family: "Noto Sans", sans-serif !important;
     text-align: start !important;
   }
-  a{
+
+  a {
     text-decoration: underline !important;
     font-family: "Noto Sans", sans-serif !important;
   }
 }
+
 .btn {
   font-size: 20px;
   font-weight: 500;
@@ -174,7 +180,9 @@ header {
     background-color: #2C2F36;
     padding: 10px 0;
 
-    > div, &-contacts > div > div, &-contacts > div > a {
+    >div,
+    &-contacts>div>div,
+    &-contacts>div>a {
       color: #fff;
       font-weight: 400;
       font-size: 12px;
@@ -185,7 +193,7 @@ header {
     &-contacts {
       column-gap: 60px;
 
-      > div {
+      >div {
         column-gap: 12px;
       }
     }
@@ -211,7 +219,7 @@ header {
   .header_mid {
     background: transparent;
 
-    > div {
+    >div {
       column-gap: 38px;
     }
 
@@ -253,7 +261,9 @@ header {
         font-size: 16px;
       }
 
-      .link, .links, {
+      .link,
+      .links,
+        {
         font-style: normal;
         white-space: nowrap;
         font-weight: 500;
@@ -265,7 +275,7 @@ header {
         transition: all .2s ease;
         column-gap: 10px;
 
-        > a {
+        >a {
           font-style: normal;
           white-space: nowrap;
           font-weight: 500;
@@ -277,7 +287,7 @@ header {
           column-gap: 10px;
         }
 
-        > img {
+        >img {
           filter: brightness(0);
           transition: filter .3s ease;
         }
@@ -296,7 +306,7 @@ header {
           border: 1px solid #E4E4E4;
           box-shadow: 7px 10px 37px rgba(11, 69, 127, 0.07);
 
-          > div > div {
+          >div>div {
             row-gap: 40px;
             column-gap: 50px;
             //grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
@@ -316,7 +326,7 @@ header {
               max-width: 275px;
             }
 
-            > div {
+            >div {
               h2 {
                 font-weight: 700;
                 font-size: 18px;
@@ -348,7 +358,7 @@ header {
           border: 1px solid #E4E4E4;
           box-shadow: 7px 10px 37px rgba(11, 69, 127, 0.07);
 
-          > div > div {
+          >div>div {
             row-gap: 40px;
             column-gap: 50px;
             //grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
@@ -368,7 +378,7 @@ header {
               max-width: 275px;
             }
 
-            > div {
+            >div {
               h2 {
                 font-weight: 700;
                 font-size: 18px;
@@ -424,14 +434,17 @@ header {
       cursor: pointer;
       padding: 0 !important;
 
-      &::after, &::before, div {
+      &::after,
+      &::before,
+      div {
         position: absolute;
         width: 50px;
         height: 3px;
         background: #0A0A0A;
       }
 
-      &::after, &::before {
+      &::after,
+      &::before {
         content: '';
       }
 
@@ -469,7 +482,7 @@ footer {
           height: 24px;
         }
 
-        > div {
+        >div {
           img {
             height: 16px;
           }
@@ -613,7 +626,8 @@ footer {
       }
     }
 
-    p, a {
+    p,
+    a {
       color: #fff;
       text-decoration: none;
       font-weight: 400;
@@ -650,7 +664,8 @@ footer {
       width: calc(100% - 20px);
       max-width: 1410px;
 
-      .swiper-button-prev, .swiper-button-next {
+      .swiper-button-prev,
+      .swiper-button-next {
         position: relative;
         width: 40px;
         height: 40px;
@@ -664,7 +679,8 @@ footer {
           height: 100%;
         }
 
-        &::after, &::before {
+        &::after,
+        &::before {
           content: unset;
         }
       }
@@ -686,6 +702,7 @@ footer {
           @media (max-width: 767.96px) {
             height: 450px !important;
           }
+
           @media (max-width: 575.96px) {
             height: 300px !important;
           }
@@ -763,7 +780,7 @@ footer {
         }
 
         &-bottom {
-          > div {
+          >div {
             padding: 40px 25px;
 
             .swiper-pagination {
@@ -830,7 +847,7 @@ footer {
 .favs {
   padding: 70px 0 35px;
 
-  > div {
+  >div {
     gap: 10px;
   }
 
@@ -861,8 +878,9 @@ footer {
 .models {
   padding: 70px 0;
   overflow: hidden;
-  .desc-chars_switcher{
-    div{
+
+  .desc-chars_switcher {
+    div {
       padding: 10px 15px;
       background-color: #fff;
       border: 2px solid #0A0A0A;
@@ -880,13 +898,15 @@ footer {
         color: #fff;
       }
     }
-    @media(max-width: 576px){
+
+    @media(max-width: 576px) {
       div {
         width: 100%;
         font-size: 14px;
       }
     }
   }
+
   &-header {
     row-gap: 30px;
     position: relative;
@@ -903,7 +923,8 @@ footer {
       gap: 12px;
       align-items: center;
       justify-content: center;
-      p{
+
+      p {
         white-space: nowrap;
       }
 
@@ -923,8 +944,9 @@ footer {
     .model {
       opacity: 0 !important;
       row-gap: 30px;
-      &-container{
-        @media(max-width: 576px){
+
+      &-container {
+        @media(max-width: 576px) {
           flex-direction: column;
           gap: 10px;
         }
@@ -954,7 +976,7 @@ footer {
       &-switcherWrap {
         row-gap: 16px;
 
-        > p {
+        >p {
           margin-bottom: 0;
           font-weight: 400;
           font-size: 20px;
@@ -965,7 +987,7 @@ footer {
       }
 
       &-switcher {
-        > div {
+        >div {
           user-select: none;
           white-space: nowrap;
           position: relative;
@@ -1011,11 +1033,13 @@ footer {
           width: 100%;
           z-index: 1;
         }
-        .popover{
+
+        .popover {
           border-radius: 50%;
           z-index: 10;
           background-color: unset;
           border: unset;
+
           &-content {
             opacity: 0;
             visibility: hidden;
@@ -1029,13 +1053,15 @@ footer {
             border-radius: 12px;
             box-shadow: 0 4px 8px 0 #0000000F, 0 0 4px 0 #0000000A;
             width: 180px;
+
             @media (max-width: 768px) {
               padding: 8px;
               bottom: 50%;
               width: 150px;
               left: -230%;
             }
-            p{
+
+            p {
               text-align: center;
               font-weight: 400;
               font-size: 12px;
@@ -1045,6 +1071,7 @@ footer {
             }
           }
         }
+
         .popover:hover .popover-content {
           z-index: 10;
           opacity: 1;
@@ -1052,122 +1079,147 @@ footer {
           transform: translate(0, -20px);
           transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
         }
-        .J7{
-          &-1{
+
+        .J7 {
+          &-1 {
             top: 210px;
             left: 120px;
-            @media(max-width: 1400px){
+
+            @media(max-width: 1400px) {
               top: 180px;
               left: 80px;
             }
-            @media (max-width: 992px){
+
+            @media (max-width: 992px) {
               top: 45%;
               left: 10%;
             }
-            @media(max-width: 768px){
+
+            @media(max-width: 768px) {
               top: 37%;
               left: 10%;
             }
-            @media(max-width: 576px){
+
+            @media(max-width: 576px) {
               top: 40%;
               left: 10%;
             }
           }
-          &-2{
+
+          &-2 {
             top: 210px;
             left: 330px;
-            @media(max-width: 1400px){
+
+            @media(max-width: 1400px) {
               top: 180px;
               left: 270px;
             }
-            @media (max-width: 992px){
+
+            @media (max-width: 992px) {
               top: 45%;
               left: 40%;
             }
-            @media(max-width: 768px){
+
+            @media(max-width: 768px) {
               top: 35%;
               left: 40%;
             }
-            @media(max-width: 576px){
+
+            @media(max-width: 576px) {
               top: 35%;
               left: 40%;
             }
           }
-          &-3{
+
+          &-3 {
             top: 270px;
             left: 330px;
-            @media(max-width: 1400px){
+
+            @media(max-width: 1400px) {
               top: 220px;
               left: 270px;
             }
-            @media (max-width: 992px){
+
+            @media (max-width: 992px) {
               top: 56%;
               left: 38%;
             }
-            @media(max-width: 768px){
+
+            @media(max-width: 768px) {
               top: 47%;
               left: 38%;
             }
-            @media(max-width: 576px){
+
+            @media(max-width: 576px) {
               top: 45%;
               left: 35%;
             }
           }
-          &-4{
+
+          &-4 {
             top: 340px;
             left: 450px;
-            @media(max-width: 1400px){
+
+            @media(max-width: 1400px) {
               top: 280px;
               left: 380px;
             }
-            @media (max-width: 992px){
+
+            @media (max-width: 992px) {
               top: 70%;
               left: 55%;
             }
-            @media(max-width: 768px){
+
+            @media(max-width: 768px) {
               top: 60%;
               left: 54%;
             }
-            @media(max-width: 576px){
+
+            @media(max-width: 576px) {
               top: 55%;
               left: 50%;
             }
           }
         }
-        .J8{
-          &-1{
+
+        .J8 {
+          &-1 {
             top: 50%;
             left: 12%;
-            @media(max-width: 768px){
+
+            @media(max-width: 768px) {
               top: 40%;
               left: 12%;
             }
           }
-          &-2{
+
+          &-2 {
             top: 45%;
             left: 40%;
 
-            @media(max-width: 768px){
+            @media(max-width: 768px) {
               top: 37%;
               left: 40%;
             }
 
           }
-          &-3{
+
+          &-3 {
             top: 60%;
             left: 50%;
 
-            @media(max-width: 768px){
+            @media(max-width: 768px) {
               top: 50%;
               left: 50%;
             }
 
           }
-          &-4{
+
+          &-4 {
             top: 40%;
             left: 70%;
 
-            @media(max-width: 768px){
+            @media(max-width: 768px) {
               top: 30%;
               left: 70%;
             }
@@ -1182,9 +1234,11 @@ footer {
 
         &-chars {
           row-gap: 40px;
-          &_switcher_motors{
+
+          &_switcher_motors {
             gap: 16px;
-            p{
+
+            p {
               margin-bottom: 0;
               font-weight: 400;
               font-size: 20px;
@@ -1200,7 +1254,7 @@ footer {
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr;
 
-            > div {
+            >div {
               max-width: 130px;
 
               .val_desc {
@@ -1220,6 +1274,7 @@ footer {
                 margin-bottom: 8px;
               }
             }
+
             @media (min-width: 992px) and (max-width: 1200px) {
               max-width: 244px;
             }
@@ -1269,7 +1324,14 @@ footer {
   }
 }
 
-.specials, .services, .exterior, .interior, .technologies, .news, .models, .specialsOffers {
+.specials,
+.services,
+.exterior,
+.interior,
+.technologies,
+.news,
+.models,
+.specialsOffers {
   &-header {
     h2 {
       color: #2C2F36;
@@ -1286,7 +1348,7 @@ footer {
   padding: 90px 0;
   overflow-x: hidden;
 
-  > div {
+  >div {
     row-gap: 50px;
   }
 
@@ -1369,7 +1431,7 @@ footer {
 .mobileApplication {
   padding: 90px 0;
 
-  > div {
+  >div {
     gap: 40px;
   }
 
@@ -1456,7 +1518,7 @@ footer {
 .aboutDealer {
   padding: 90px 0;
 
-  > div {
+  >div {
     column-gap: 40px;
   }
 
@@ -1494,7 +1556,7 @@ footer {
 .services {
   padding: 90px 0;
 
-  > div {
+  >div {
     row-gap: 50px;
   }
 
@@ -1537,55 +1599,7 @@ footer {
   }
 }
 
-.contacts_main {
-  padding: 90px 0 180px;
 
-  .contacts {
-    gap: 60px;
-
-    &-map {
-      max-width: 594px;
-      height: 340px;
-      flex: 1 0 0;
-
-      iframe {
-        width: 100%;
-        height: 100%;
-      }
-    }
-
-    &-info {
-      gap: 40px;
-      flex: 1 0 0;
-
-      h2 {
-        color: #2C2F36;
-        font-family: 'Dopis', sans-serif;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 120%;
-      }
-
-      > div {
-        gap: 30px;
-
-        a:not(.btn) {
-          color: #2C2F36;
-          font-size: 30px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 110%;
-          column-gap: 18px;
-
-          img {
-            width: 30px;
-            height: auto;
-          }
-        }
-      }
-    }
-  }
-}
 
 .modelMainBlock {
   &-info {
@@ -1594,7 +1608,7 @@ footer {
     padding-top: 110px;
     z-index: 1;
 
-    > div {
+    >div {
       row-gap: 50px;
     }
 
@@ -1769,7 +1783,7 @@ footer {
   &-switcherWrap {
     row-gap: 16px;
 
-    > p {
+    >p {
       margin-bottom: 0;
       font-weight: 400;
       font-size: 20px;
@@ -1779,7 +1793,7 @@ footer {
   }
 
   &-switcher {
-    > div {
+    >div {
       user-select: none;
       white-space: nowrap;
       position: relative;
@@ -1822,7 +1836,7 @@ footer {
 .exterior {
   padding: 90px 0;
 
-  > div {
+  >div {
     row-gap: 40px;
   }
 
@@ -1888,7 +1902,8 @@ footer {
         &-arrows {
           column-gap: 20px;
 
-          .swiper-button-prev, .swiper-button-next {
+          .swiper-button-prev,
+          .swiper-button-next {
             position: relative;
             width: 40px;
             height: 40px;
@@ -1902,7 +1917,8 @@ footer {
               height: 100%;
             }
 
-            &::after, &::before {
+            &::after,
+            &::before {
               content: unset;
             }
           }
@@ -1957,7 +1973,7 @@ footer {
 .interior {
   padding: 90px 0;
 
-  > div {
+  >div {
     row-gap: 60px;
   }
 
@@ -2004,7 +2020,7 @@ footer {
 .technologies {
   padding: 90px 0;
 
-  > div {
+  >div {
     row-gap: 40px;
   }
 
@@ -2127,7 +2143,8 @@ footer {
       align-items: center;
       justify-content: center;
 
-      &::after, &::before {
+      &::after,
+      &::before {
         content: "";
         height: 2px;
         width: 28px;
@@ -2193,7 +2210,7 @@ footer {
         padding: 12px 13px;
       }
 
-      > div {
+      >div {
         width: 100%;
         position: relative;
       }
@@ -2297,7 +2314,7 @@ footer {
 .news {
   padding: 90px 0;
 
-  > div {
+  >div {
     row-gap: 30px;
   }
 
@@ -2366,7 +2383,7 @@ footer {
 }
 
 .newsAll {
-  > div {
+  >div {
     row-gap: 60px;
   }
 
@@ -2516,7 +2533,7 @@ footer {
     justify-content: center;
     align-items: center;
 
-    > div {
+    >div {
       position: absolute;
       height: 3px;
       width: 38px;
@@ -2560,7 +2577,7 @@ footer {
     &-contacts {
       row-gap: 10px;
 
-      > a > p {
+      >a>p {
         color: #000;
         font-size: 16px;
         font-weight: 500;
@@ -2568,10 +2585,10 @@ footer {
         margin-bottom: 0;
       }
 
-      > div {
+      >div {
         row-gap: 10px;
 
-        > div {
+        >div {
           column-gap: 14px;
 
           a {
@@ -2591,19 +2608,19 @@ footer {
           }
         }
 
-        > a {
+        >a {
           text-decoration: none;
 
-          > div {
+          >div {
             column-gap: 12px;
 
-            > div {
+            >div {
               img {
                 height: 20px;
               }
             }
 
-            > p {
+            >p {
               color: #0A0A0A;
               font-size: 14px;
               font-weight: 400;
@@ -2621,7 +2638,7 @@ footer {
       .modelsList {
         row-gap: 10px;
 
-        > p {
+        >p {
           color: #000;
           font-size: 16px;
           font-weight: 500;
@@ -2629,7 +2646,7 @@ footer {
           margin-bottom: 0;
         }
 
-        > div {
+        >div {
           row-gap: 10px;
 
           a {
@@ -2650,7 +2667,7 @@ footer {
         }
       }
 
-      > a {
+      >a {
         color: #000;
         font-size: 16px;
         font-weight: 500;
@@ -2723,12 +2740,14 @@ footer {
     &-header {
       .stickers {
         padding: 8px 22px;
+
         &-wrap {
           column-gap: 20px;
         }
       }
     }
   }
+
   .model {
     &Colors {
       &-model {
@@ -2773,7 +2792,7 @@ footer {
               grid-template-rows: 1fr;
               min-width: 210px;
 
-              > div {
+              >div {
                 max-width: unset;
               }
             }
@@ -2803,7 +2822,7 @@ footer {
   }
 
   .mobileApplication {
-    > div {
+    >div {
       gap: unset;
     }
 
@@ -2824,7 +2843,7 @@ footer {
   .services {
     padding: 90px 0;
 
-    > div {
+    >div {
       row-gap: 60px;
     }
 
@@ -2880,7 +2899,7 @@ footer {
           }
 
           &-bottom {
-            > div {
+            >div {
               padding: 25px 25px;
             }
           }
@@ -2913,7 +2932,7 @@ footer {
           width: 100%;
           min-width: unset;
 
-          > div {
+          >div {
             row-gap: 40px;
             column-gap: 15px;
             width: 100%;
@@ -2926,7 +2945,7 @@ footer {
               column-gap: 20px;
               grid-template-columns: 1fr 1fr 1fr 1fr;
 
-              > div {
+              >div {
                 max-width: unset;
 
                 .val_desc {
@@ -2951,6 +2970,7 @@ footer {
     &-header {
       .stickers {
         padding: 8px 22px;
+
         &-wrap {
           row-gap: 12px;
           bottom: -63px;
@@ -3006,7 +3026,7 @@ footer {
   .mobileApplication {
     padding: 60px 0;
 
-    > div {
+    >div {
       gap: unset;
     }
 
@@ -3039,7 +3059,7 @@ footer {
   .aboutDealer {
     padding: 60px 0;
 
-    > div {
+    >div {
       row-gap: 40px;
     }
 
@@ -3060,7 +3080,7 @@ footer {
   .services {
     padding: 60px 0;
 
-    > div {
+    >div {
       row-gap: 40px;
     }
 
@@ -3096,7 +3116,7 @@ footer {
         max-width: 438px;
         gap: 30px;
 
-        > div {
+        >div {
           gap: 30px;
 
           a:not(.btn) {
@@ -3120,7 +3140,7 @@ footer {
       padding-top: 40px;
       z-index: 1;
 
-      > div {
+      >div {
         row-gap: 40px;
       }
 
@@ -3204,7 +3224,7 @@ footer {
           }
 
           &-bottom {
-            > div {
+            >div {
               padding: 25px;
 
               &:nth-of-type(1) {
@@ -3294,7 +3314,7 @@ footer {
   .exterior {
     padding: 60px 0;
 
-    > div {
+    >div {
       row-gap: 40px;
     }
 
@@ -3346,7 +3366,7 @@ footer {
   .interior {
     padding: 60px 0;
 
-    > div {
+    >div {
       row-gap: 40px;
     }
 
@@ -3469,7 +3489,7 @@ footer {
   .news {
     padding: 60px 0;
 
-    > div {
+    >div {
       row-gap: 40px;
     }
 
@@ -3562,7 +3582,7 @@ footer {
   .favs {
     padding: 60px 0 30px;
 
-    > div {
+    >div {
       row-gap: 24px;
     }
 
@@ -3613,13 +3633,13 @@ footer {
         }
 
         &-switcherWrap {
-          > p {
+          >p {
             font-size: 14px;
           }
         }
 
         &-switcher {
-          > div {
+          >div {
             font-size: 14px;
             line-height: normal;
           }
@@ -3641,7 +3661,7 @@ footer {
               grid-template-columns: 1fr 1fr;
               grid-template-rows: 1fr;
 
-              > div {
+              >div {
                 max-width: 130px;
 
                 .val_desc {
@@ -3678,6 +3698,7 @@ footer {
                 align-items: center;
                 gap: 12px;
                 cursor: pointer;
+
                 &-wrap {
                   row-gap: 10px;
                 }
@@ -3702,7 +3723,14 @@ footer {
     }
   }
 
-  .specials, .services, .exterior, .interior, .technologies, .news, .models, .specialsOffers {
+  .specials,
+  .services,
+  .exterior,
+  .interior,
+  .technologies,
+  .news,
+  .models,
+  .specialsOffers {
     &-header {
       h2 {
         font-size: 24px;
@@ -3713,7 +3741,7 @@ footer {
   .specials {
     padding: 35px 0;
 
-    > div {
+    >div {
       row-gap: 30px;
       position: relative;
 
@@ -3773,7 +3801,7 @@ footer {
   .mobileApplication {
     padding: 35px 0;
 
-    > div {
+    >div {
       gap: unset;
     }
 
@@ -3848,7 +3876,7 @@ footer {
   .aboutDealer {
     padding: 35px 0;
 
-    > div {
+    >div {
       row-gap: 20px;
     }
 
@@ -3874,7 +3902,7 @@ footer {
   .services {
     padding: 35px 0;
 
-    > div {
+    >div {
       row-gap: 40px;
     }
 
@@ -3915,7 +3943,7 @@ footer {
         max-width: unset;
         width: 100%;
 
-        > div {
+        >div {
           gap: 20px;
 
           a:not(.btn) {
@@ -4008,7 +4036,7 @@ footer {
             height: 23px;
           }
 
-          > div {
+          >div {
             padding: 10px 10px 6px 10px;
           }
 
@@ -4059,7 +4087,8 @@ footer {
     .footerBottom {
       row-gap: 10px;
 
-      p, a {
+      p,
+      a {
         font-weight: 500;
         font-size: 14px;
         line-height: 19px;
@@ -4085,7 +4114,7 @@ footer {
       background: linear-gradient(359deg, #1D2129 58.44%, rgba(29, 33, 41, 0.00) 95.09%);
       height: auto !important;
 
-      > div {
+      >div {
         row-gap: 40px;
       }
 
@@ -4221,13 +4250,13 @@ footer {
     }
 
     &-switcherWrap {
-      > p {
+      >p {
         font-size: 14px;
       }
     }
 
     &-switcher {
-      > div {
+      >div {
         font-size: 14px;
         line-height: 20px;
       }
@@ -4237,7 +4266,7 @@ footer {
   .exterior {
     padding: 35px 0;
 
-    > div {
+    >div {
       row-gap: 30px;
     }
 
@@ -4245,7 +4274,7 @@ footer {
       position: relative;
 
       .swiper-slide {
-        > img {
+        >img {
           height: 350px;
           object-position: right;
         }
@@ -4273,7 +4302,7 @@ footer {
   .interior {
     padding: 35px 0;
 
-    > div {
+    >div {
       row-gap: 30px;
     }
 
@@ -4392,7 +4421,7 @@ footer {
           }
 
           &-bottom {
-            > div {
+            >div {
               padding: 40px 25px;
 
               .swiper-pagination {
@@ -4462,7 +4491,7 @@ footer {
   .technologies {
     padding: 35px 0;
 
-    > div {
+    >div {
       row-gap: 40px;
     }
 
@@ -4505,7 +4534,7 @@ footer {
   .news {
     padding: 35px 0;
 
-    > div {
+    >div {
       row-gap: 20px;
     }
 
@@ -4579,7 +4608,7 @@ footer {
   }
 
   .newsAll {
-    > div {
+    >div {
       row-gap: 30px;
     }
 
@@ -4727,7 +4756,7 @@ footer {
           }
         }
 
-        > div {
+        >div {
           width: 100%;
           position: relative;
         }
@@ -4762,6 +4791,7 @@ footer {
     height: 500px !important;
     background: linear-gradient(359deg, #1D2129 58.44%, rgba(29, 33, 41, 0) 70.09%);
   }
+
   @media (max-width: 575.96px) {
     height: 600px !important;
     background: linear-gradient(359deg, #1D2129 58.44%, rgba(29, 33, 41, 0) 70.09%);
@@ -4790,12 +4820,15 @@ footer {
     @media (max-width: 1400px) {
       padding: 50px 135px;
     }
+
     @media (max-width: 1199.96px) and (min-width: 991.96px) {
       padding: 50px;
     }
+
     @media (max-width: 991.96px) and (min-width: 768.96px) {
       padding: 40px 30px;
     }
+
     @media (max-width: 767.96px) {
       padding: 30px 11.5px;
       row-gap: 18px;
@@ -4806,9 +4839,11 @@ footer {
     font-size: 50px;
     line-height: 110%;
     font-weight: 700;
+
     @media (min-width: 767.96px) and (max-width: 991.96px) {
       font-size: 40px;
     }
+
     @media (max-width: 767.96px) {
       font-size: 20px;
     }
@@ -4820,10 +4855,12 @@ footer {
       align-items: center;
       row-gap: 40px;
     }
+
     @media (max-width: 992.96px) {
       align-items: center;
       row-gap: 30px;
     }
+
     @media (max-width: 767.96px) {
       align-items: center;
       row-gap: 24px;
@@ -4833,6 +4870,7 @@ footer {
   @media (min-width: 767.96px) and (max-width: 991.96px) {
     padding: 35px 0 60px;
   }
+
   @media (max-width: 767.96px) {
     padding: 30px 0 35px;
   }
@@ -4845,18 +4883,25 @@ footer {
   .flip {
     box-shadow: none;
     background: none;
-    height: 120px; /* Default height */
-    width: 80px; /* Default width */
+    height: 120px;
+    /* Default height */
+    width: 80px;
+    /* Default width */
     margin-right: 10px;
     border-radius: 5px;
 
     @media (max-width: 991.96px) {
-      height: 100px; /* Reduced height */
-      width: 70px; /* Reduced width */
+      height: 100px;
+      /* Reduced height */
+      width: 70px;
+      /* Reduced width */
     }
+
     @media (max-width: 767.96px) {
-      height: 44px; /* Further reduced height */
-      width: 30px; /* Further reduced width */
+      height: 44px;
+      /* Further reduced height */
+      width: 30px;
+      /* Further reduced width */
       margin-right: 2px;
       padding-left: 30px;
     }
@@ -4871,17 +4916,17 @@ footer {
     flex-direction: column;
     font-size: 80px;
     line-height: 145%;
+
     @media (max-width: 991.96px) and (min-width: 767.96px) {
       line-height: 125%;
     }
+
     @media (max-width: 767.96px) {
       font-size: 30px;
     }
   }
 
-  ul.flip li a div div.inn {
-
-  }
+  ul.flip li a div div.inn {}
 
   ul li a div.up:after {
     top: 98%;
@@ -4902,6 +4947,7 @@ footer {
   ul.flip:nth-child(6),
   ul.flip:nth-child(9) {
     margin-right: 22px;
+
     @media (max-width: 767.96px) {
       margin-right: 8px;
     }
@@ -4926,21 +4972,26 @@ footer {
     font-size: 16px;
     line-height: 130%;
     color: #2C2F36;
+
     @media (min-width: 767.96px) {
       &:nth-child(4) {
         padding-left: 0;
         padding-right: 1rem;
       }
     }
+
     @media (max-width: 767.96px) {
       font-size: 12px;
       padding: 0;
+
       &:nth-child(4) {
         padding-right: 1rem;
       }
+
       &:nth-child(3) {
         padding-right: 0.5rem;
       }
+
       &:nth-child(1) {
         padding-left: 0.5rem;
       }
@@ -4949,6 +5000,7 @@ footer {
 
   @media (max-width: 767.96px) {
     margin-top: 4px;
+
     div:nth-child(3) {
       padding-left: 0;
     }
@@ -5031,7 +5083,8 @@ footer {
 
       select {
         max-width: unset;
-        color: rgb(164, 164, 164);;
+        color: rgb(164, 164, 164);
+        ;
         padding: 12px 52px 12px 16px;
         line-height: 150%;
         font-size: 16px;
@@ -5044,6 +5097,7 @@ footer {
         -webkit-appearance: none;
         width: 100%;
         cursor: pointer;
+
         @media (max-width: 991.96px) {
           max-width: none;
         }
@@ -5077,6 +5131,7 @@ footer {
     .btn-more {
       font-size: 16px;
       cursor: pointer;
+
       @media (max-width: 767.96px) {
         font-size: 14px;
       }
@@ -5085,9 +5140,11 @@ footer {
     @media (max-width: 1399.96px) and (min-width: 991.96px) {
       row-gap: 30px;
     }
+
     @media (max-width: 991.96px) and (min-width: 767.96px) {
       row-gap: 50px;
     }
+
     @media (max-width: 767.96px) {
       row-gap: 30px;
     }
@@ -5096,6 +5153,7 @@ footer {
   @media (max-width: 991.96px) and (min-width: 767.96px) {
     padding: 60px 0;
   }
+
   @media (max-width: 767.96px) {
     padding: 35px 0;
   }
@@ -5183,7 +5241,8 @@ footer {
       }
     }
 
-    &Content, &Text {
+    &Content,
+    &Text {
       row-gap: 20px;
     }
 
@@ -5230,6 +5289,7 @@ footer {
             border-radius: 10px;
             box-shadow: 0 8px 16px 0 #00000014, 0 0 4px 0 #0000000A;
             width: 245px;
+
             @media (max-width: 576px) {
               left: -670%;
               width: 187px;
@@ -5242,6 +5302,7 @@ footer {
               line-height: 150%;
               color: #000;
               margin: 0;
+
               @media (max-width: 576px) {
                 font-size: 12px;
               }
@@ -5280,15 +5341,18 @@ footer {
       }
     }
   }
+
   @media (min-width: 767.96px) and (max-width: 991.96px) {
     &Wrapper {
       padding: 50px 0;
     }
+
     &Grid {
       grid-template-columns: 1fr 1fr;
       row-gap: 70px;
       column-gap: 30px;
     }
+
     &Card {
       &Slider {
         height: 210px;
@@ -5303,7 +5367,8 @@ footer {
         }
       }
 
-      &Content, &Text {
+      &Content,
+      &Text {
         row-gap: 20px;
       }
 
@@ -5312,14 +5377,17 @@ footer {
       }
     }
   }
+
   @media (max-width: 767.96px) {
     &Wrapper {
       padding: 35px 0;
     }
+
     &Grid {
       grid-template-columns: 1fr;
       row-gap: 30px;
     }
+
     &Card {
       &Slider {
         height: 210px;
@@ -5334,7 +5402,8 @@ footer {
         }
       }
 
-      &Content, &Text {
+      &Content,
+      &Text {
         row-gap: 20px;
       }
 
@@ -5399,7 +5468,8 @@ footer {
       border: 1px solid #a4a4a4;
       outline: none;
 
-      &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
         -webkit-appearance: none;
         margin: 0;
       }
@@ -5421,6 +5491,7 @@ footer {
 
   @media (min-width: 992px) and (max-width: 1399.96px) {
     padding: 35px 0;
+
     &Content {
       padding: 45px 0;
     }
@@ -5430,12 +5501,15 @@ footer {
     }
 
   }
+
   @media (min-width: 768px) and (max-width: 991.96px) {
     padding: 40px;
     max-width: 535px;
+
     &Wrapper {
       padding: 50px 0;
     }
+
     &Content {
       padding: 50px 0;
     }
@@ -5445,13 +5519,16 @@ footer {
     }
 
   }
+
   @media (max-width: 767.96px) {
     row-gap: 30px;
     padding: 40px 20px;
     max-width: unset;
+
     &Wrapper {
       padding: 35px 0;
     }
+
     &Content {
       padding: 0;
       background-position: 10% center;
@@ -5460,15 +5537,18 @@ footer {
         padding: 0;
       }
     }
+
     &Header {
       font-size: 24px;
     }
+
     &Field {
       input {
         font-size: 14px;
         padding: 8px 15px;
       }
     }
+
     &Form {
       max-width: unset;
     }
@@ -5722,7 +5802,7 @@ footer {
 
   &-content {
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 70px;
 
     img {
@@ -5743,6 +5823,7 @@ footer {
       line-height: 110.00000000000001%;
       text-transform: uppercase;
       margin: 0;
+
       @media(max-width: 992px) {
         font-size: 40px;
       }
@@ -5766,15 +5847,18 @@ footer {
 
   @media(max-width: 1440px) {
     &-content {
-      grid-template-columns:1fr;
+      grid-template-columns: 1fr;
       gap: 50px;
     }
+
     &-text {
       padding: 0;
     }
   }
+
   @media(max-width: 992px) {
     padding: 75px 0 110px 0;
+
     &-text {
       h2 {
         font-size: 40px;
@@ -5788,11 +5872,14 @@ footer {
       }
     }
   }
+
   @media(max-width: 768px) {
     padding: 50px 0 40px 0;
   }
+
   @media(max-width: 576px) {
     padding: 35px 0 10px 0;
+
     &-text {
       gap: 30px;
 
@@ -5817,18 +5904,22 @@ footer {
   }
 
   gap: 50px;
+
   @media(max-width: 992px) {
     gap: 40px;
   }
+
   @media(max-width: 768px) {
     gap: 30px;
   }
 
   &-title-container {
     gap: 40px;
+
     @media(max-width: 768px) {
       gap: 30px;
     }
+
     @media(max-width: 576px) {
       gap: 20px;
     }
@@ -5839,6 +5930,7 @@ footer {
       line-height: 110.00000000000001%;
       text-transform: uppercase;
       margin: 0;
+
       @media(max-width: 576px) {
         font-size: 24px !important;
       }
@@ -5854,6 +5946,7 @@ footer {
       line-height: 120%;
       color: #000;
       text-decoration: none !important;
+
       @media(max-width: 768px) {
         font-size: 16px;
       }
@@ -5908,6 +6001,7 @@ footer {
         h3 {
           font-size: 16px !important;
         }
+
         p {
           font-size: 14px !important;
         }
@@ -5993,34 +6087,41 @@ footer {
         padding: 30px 0 0 30px;
       }
     }
+
     &-grid {
       &-item2 {
         margin-right: 20px;
       }
     }
+
     &-grid-container {
       gap: 20px;
     }
+
     &-grid1 {
       grid-template-rows: 230px 350px;
       row-gap: 20px;
     }
+
     &-grid2 {
       grid-template-rows: 350px 230px;
       row-gap: 20px;
     }
   }
+
   @media(max-width: 992px) {
 
     &-container {
       padding: 40px 0 75px 0;
     }
+
     h1 {
       font-weight: 500;
       font-size: 32px;
       line-height: 110.00000000000001%;
       text-transform: uppercase;
     }
+
     &-item {
       &-text {
         padding: 20px 0 0 20px;
@@ -6044,22 +6145,27 @@ footer {
         }
       }
     }
+
     &-grid-container {
       gap: 20px;
     }
+
     &-grid1 {
       grid-template-rows: 200px 300px;
       row-gap: 20px;
     }
+
     &-grid2 {
       grid-template-rows: 300px 200px;
       row-gap: 20px;
     }
   }
+
   @media(max-width: 768px) {
     &-container {
       padding: 40px 0 50px 0;
     }
+
     &-grid {
       &-item1 {
         grid-column: 1;
@@ -6073,19 +6179,23 @@ footer {
         grid-column: 1 / span 2;
       }
     }
+
     &-grid-container {
-      grid-template-columns:1fr 1fr;
+      grid-template-columns: 1fr 1fr;
     }
   }
+
   @media(max-width: 576px) {
     &-container {
       padding: 30px 0 35px 0;
     }
+
     &-navigation {
       a {
         font-size: 14px;
       }
     }
+
     &-grid {
       &-item5 {
         grid-column: 1;
@@ -6095,6 +6205,7 @@ footer {
         max-width: 190px;
       }
     }
+
     &-item {
       &-image {
         max-width: 190px;
@@ -6105,12 +6216,11 @@ footer {
         display: none !important;
       }
 
-      &-text {
-
-      }
+      &-text {}
     }
+
     &-grid-container {
-      grid-template-columns:1fr;
+      grid-template-columns: 1fr;
       grid-auto-rows: 1fr;
     }
   }
@@ -6118,29 +6228,35 @@ footer {
 
 .credit {
   padding: 90px 0;
+
   @media (max-width: 991.96px) and (min-width: 767.96px) {
     padding: 60px 0;
   }
+
   @media (max-width: 767.96px) {
     padding: 35px 0;
   }
-  .container{
 
-  }
-  &-wrap{
+  .container {}
 
-  }
+  &-wrap {}
+
   &-content-wrap {
     padding: 60px;
 
-    @media (max-width: 1399.96px) and (min-width: 991.96px) { ///1000
+    @media (max-width: 1399.96px) and (min-width: 991.96px) {
+      ///1000
       padding: 40px;
     }
-    @media (max-width: 991.96px) and (min-width: 575.96px) { ///768
+
+    @media (max-width: 991.96px) and (min-width: 575.96px) {
+      ///768
       flex-direction: column;
       padding: 40px 60px;
     }
-    @media (max-width: 575.96px) {  /// 320
+
+    @media (max-width: 575.96px) {
+      /// 320
       padding: 40px 20px;
     }
   }
@@ -6179,28 +6295,28 @@ footer {
     background-color: #2C2F36;
     box-shadow: -1px 4px 47px 0px #0B457F14;
     box-shadow: 0px 7px 47px 0px #0B457F0A;
+
     @media (max-width: 992px) {
       flex-direction: column-reverse;
       gap: 0;
     }
   }
 
-  .car-bg {
+  .car-bg {}
 
-  }
-
-  .elem-bg {
-
-  }
+  .elem-bg {}
 
   &-content {
     gap: 30px;
+
     @media (max-width: 992px) {
       width: 100%;
     }
+
     @media (max-width: 576px) {
       gap: 25px;
     }
+
     p {
       color: white;
       font-size: 16px;
@@ -6226,6 +6342,7 @@ footer {
         font-size: 16px;
         line-height: 130%;
         font-family: "Noto Sans", sans-serif;
+
         @media (max-width: 575.96px) {
           font-size: 14px;
         }
@@ -6255,7 +6372,8 @@ footer {
       }
 
 
-      #output-payments, #output-term {
+      #output-payments,
+      #output-term {
         font-size: 16px;
         color: white;
         transform: translateX(-50%);
@@ -6291,6 +6409,7 @@ footer {
         line-height: 150%;
         text-align: center;
         font-family: "Noto Sans", sans-serif;
+
         @media (max-width: 575.96px) {
           font-size: 14px;
         }
@@ -6304,8 +6423,10 @@ footer {
     }
 
     &-input {
-      -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
-      width: 100%; /* Указание параметра ширины требуется для Firefox. */
+      -webkit-appearance: none;
+      /* Скрывает слайдер, чтобы можно было создать свой */
+      width: 100%;
+      /* Указание параметра ширины требуется для Firefox. */
       background: transparent;
       font-family: "Noto Sans", sans-serif;
 
@@ -6387,26 +6508,25 @@ footer {
       row-gap: 30px;
     }
   }
+
   @media (max-width: 1399.96px) and (min-width: 991.96px) {
-    .car-bg {
+    .car-bg {}
 
-    }
-    .elem-bg {
-
-    }
+    .elem-bg {}
   }
 
   @media (max-width: 991.96px) and (min-width: 767.96px) {
     .container {
       row-gap: 0;
     }
-    .car-bg {
-    }
-    .elem-bg {
 
-    }
+    .car-bg {}
+
+    .elem-bg {}
+
     &-header {
       font-size: 40px;
+
       @media (max-width: 575.96px) {
         margin-bottom: 25px;
         font-size: 24px;
@@ -6421,6 +6541,7 @@ footer {
       width: 100%;
     }
   }
+
   @media (max-width: 767.96px) {
     .container {
       row-gap: 15px;
@@ -6442,7 +6563,8 @@ footer {
 
   }
 
-  .credit-img, .credit-content-wrap {
+  .credit-img,
+  .credit-content-wrap {
     flex: 1
   }
 
@@ -6451,11 +6573,13 @@ footer {
     position: relative;
     display: flex;
     align-items: center;
+
     @media (max-width: 767.96px) {
       flex-direction: column;
       min-height: 290px;
       height: 290px;
     }
+
     @media (max-width: 575.96px) {
       min-height: 162px;
       height: 162px;
@@ -6470,6 +6594,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
     @media (max-width: 575.96px) {
       flex-direction: column;
       gap: 14px;
@@ -6480,6 +6605,7 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 24px;
+
     @media (max-width: 767.96px) {
       flex-direction: column;
     }
@@ -6490,6 +6616,7 @@ footer {
     color: black;
     line-height: 150%;
     font-family: "Noto Sans", sans-serif;
+
     @media (max-width: 575.96px) {
       font-size: 14px;
     }
@@ -6548,12 +6675,13 @@ footer {
   }
 }
 
-.meeting-marquee{
+.meeting-marquee {
   opacity: 1;
   transition: opacity .3s ease;
   white-space: nowrap;
   overflow: hidden;
-  .meeting_item{
+
+  .meeting_item {
     padding: 22px 50px 22px 0;
     width: 100%;
     position: relative;
@@ -6563,6 +6691,7 @@ footer {
     align-items: center;
     justify-content: center;
     z-index: 0;
+
     @media (max-width: 1399.96px) and (min-width: 991.96px) {
       padding: 24px 50px 24px 0;
     }
@@ -6577,29 +6706,34 @@ footer {
     }
 
   }
-  p{
+
+  p {
     font-size: 26px;
     line-height: 110%;
     font-weight: 700;
     margin: 0;
     font-family: "Dopis", "sans-serif";
+
     @media (max-width: 1399.96px) {
       font-size: 18px;
     }
   }
-  .white{
+
+  .white {
     color: #fff;
   }
-  .cian{
+
+  .cian {
     color: #00CABF;
   }
 
-  > div{
+  >div {
     animation: marq 25s linear infinite;
     display: flex;
     width: 200%;
     box-sizing: border-box;
-    >div{
+
+    >div {
       width: 100%;
       display: flex;
       background-color: #00657B;
@@ -6608,10 +6742,11 @@ footer {
   }
 }
 
-@keyframes marq{
+@keyframes marq {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(var(--marq, -50%));
   }
@@ -6659,6 +6794,7 @@ footer {
     }
 
     &-button {
+
       &-prev,
       &-next {
         width: 56px;
@@ -6692,6 +6828,7 @@ footer {
   @media (min-width: 768px) and (max-width: 991.96px) {
     padding: 50px 0;
   }
+
   @media (min-width: 575.96px) and (max-width: 991.96px) {
     .swiper {
       &-slide {
@@ -6699,9 +6836,11 @@ footer {
       }
     }
   }
+
   @media (max-width: 767.96px) {
     padding: 30px 0;
     row-gap: 25px;
+
     .swiper {
       &-slide {
         padding: 4px;
@@ -6732,7 +6871,7 @@ footer {
   }
 }
 
-.testDrive{
+.testDrive {
   padding: 150px 0;
   position: relative;
   z-index: 0;
@@ -6783,11 +6922,13 @@ footer {
       font-weight: 400;
       line-height: normal;
     }
-    .popover{
+
+    .popover {
       border-radius: 100%;
       z-index: 10;
       background-color: unset;
       border: unset;
+
       &-content {
         opacity: 0;
         visibility: hidden;
@@ -6801,23 +6942,26 @@ footer {
         border-radius: 12px;
         box-shadow: 0 4px 8px 0 #0000000F, 0 0 4px 0 #0000000A;
         width: 180px;
-        p{
+
+        p {
           font-weight: 400;
           font-size: 14px !important;
           line-height: 150%;
           text-align: center;
         }
 
-        @media(max-width: 992px){
+        @media(max-width: 992px) {
           left: -420%;
         }
+
         @media (max-width: 768px) {
           padding: 8px;
           bottom: 50%;
           width: 170px;
           left: -410%;
         }
-        p{
+
+        p {
           text-align: center;
           font-weight: 400;
           font-size: 12px;
@@ -6827,6 +6971,7 @@ footer {
         }
       }
     }
+
     .popover:hover .popover-content {
       z-index: 10;
       opacity: 1;
@@ -6835,6 +6980,7 @@ footer {
       transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
     }
   }
+
   @media(max-width: 992px) and (max-width:1200px) {
     padding: 130px 0;
 
@@ -6854,6 +7000,7 @@ footer {
       background-position: 30% center;
     }
   }
+
   @media(max-width: 768px) {
 
     padding: 25px 0 0;
@@ -6909,13 +7056,15 @@ footer {
     }
   }
 }
-.fixed-content{
+
+.fixed-content {
   position: fixed;
   left: 0;
   right: 0;
   z-index: 10000;
   bottom: 0;
 }
+
 .cookie_block {
   box-shadow: 0px -5px 44px 0px #00000012;
   left: 0;
@@ -6932,12 +7081,15 @@ footer {
     gap: 30px;
     align-items: center;
     justify-content: space-between;
+
     @media (max-width: 1400px) {
       padding: 18px 0;
     }
+
     @media (max-width: 992px) {
       padding: 12.5px 0;
     }
+
     @media (max-width: 768px) {
       padding: 10px 0;
       flex-direction: column;
@@ -6958,12 +7110,14 @@ footer {
     //text-transform: uppercase;
     margin-bottom: 0;
     max-width: 1042px;
+
     @media (max-width: 768px) {
       font-size: 14px;
     }
   }
 
   &-button {
+
     //width: 199px;
     @media (max-width: 768px) {
       //width: 166px;
@@ -6971,7 +7125,7 @@ footer {
   }
 }
 
-.modelContent{
+.modelContent {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -6985,18 +7139,18 @@ footer {
   }
 }
 
-.modelBlock{
+.modelBlock {
   display: flex;
   align-items: flex-end;
   gap: 12px;
 }
 
-.modelImg{
+.modelImg {
   width: 24px;
   height: 24px;
 }
 
-.modelText{
+.modelText {
   font-family: 'Dopis', sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -7004,7 +7158,7 @@ footer {
   text-transform: uppercase;
 }
 
-.modelContentTablet{
+.modelContentTablet {
   display: none;
 
   @media (max-width: 1200px) {
@@ -7016,4 +7170,300 @@ footer {
   @media (max-width: 992px) {
     display: none;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contacts {
+  padding: clamp(6.25rem, 5.893rem + 1.79vw, 7.5rem) 0;
+  color: #101010;
+  /* font-family: Proxima Nova; */
+}
+
+.contacts .contacts__title {
+  font-weight: 600;
+  font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+  line-height: clamp(2rem, 1.714rem + 1.43vw, 3rem);
+  padding-bottom: 5px;
+  margin-bottom: clamp(1.5rem, 1.036rem + 2.32vw, 3.125rem);
+}
+
+.contacts .contacts__title::after {
+  content: "";
+  width: 160px;
+  height: 2px;
+  background-color: #41474d;
+  display: block;
+  margin-top: 5px;
+}
+
+.contacts .contacts__content {
+  gap: 30px;
+}
+
+.contacts .contacts__map {
+  max-width: 490px;
+  height: 100%;
+  flex: 1 0 0;
+  /* border-radius: 100px;
+  border: transparent solid 1px; */
+}
+
+.contacts .contacts__map iframe {
+  width: 100% !important;
+  height: 340px !important;
+  /* жёстко задаём */
+}
+
+@media (max-width: 777px) {
+  .contacts .contacts__map {
+    max-width: 100%;
+    /* height: 400px !important; */
+  }
+}
+
+.contacts .contacts__map iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts .contacts__info {
+  flex: 1 0 0;
+}
+
+.contacts__phone-title {
+  font-weight: 600;
+  font-size: clamp(1.125rem, 1.054rem + 0.36vw, 1.375rem);
+  line-height: clamp(1.5rem, 1.393rem + 0.54vw, 1.875rem);
+  color: #004786;
+}
+
+.contacts__phone-link {
+  font-weight: 600;
+  font-size: clamp(1.125rem, 1.054rem + 0.36vw, 1.375rem);
+  line-height: clamp(1.5rem, 1.393rem + 0.54vw, 1.875rem);
+  color: inherit;
+}
+
+.contacts__email {
+  font-weight: 500;
+  font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
+  line-height: 24px;
+  margin-top: 10px;
+
+  margin-bottom: 16px;
+}
+
+.contacts__address {
+  font-weight: 500;
+  font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
+  line-height: 24px;
+  margin-bottom: clamp(1.25rem, 1.179rem + 0.36vw, 1.5rem);
+}
+
+.promoForm {
+  color: #1d1d1d;
+}
+
+.promoForm .image-side {
+  min-height: 360px;
+}
+
+@media (min-width: 768px) {
+  .promoForm .image-side {
+    min-height: 360px;
+  }
+}
+
+@media (min-width: 992px) {
+  .promoForm .image-side {
+    min-height: 518px;
+  }
+}
+
+.promoForm .image-side img {
+  display: block;
+  object-fit: cover;
+  object-position: 10% 50%;
+}
+
+.promoForm__content {
+  background-color: #f3f3f3;
+  padding: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+  align-items: center;
+}
+
+.promoForm .content-wrap {
+  max-width: clamp(18.75rem, 13.679rem + 25.36vw, 36.5rem);
+}
+
+@media (min-width: 320px) {
+  .promoForm .content-wrap {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .promoForm .content-wrap {
+    max-width: clamp(18.75rem, 13.679rem + 25.36vw, 36.5rem);
+  }
+}
+
+.promoForm .content-wrap h3 {
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+  line-height: clamp(1.875rem, 1.554rem + 1.61vw, 3rem);
+}
+
+.promoForm .content-wrap p {
+  font-size: clamp(0.875rem, 0.839rem + 0.18vw, 1rem);
+}
+
+.promoForm__btn {
+  width: 238px;
+  height: 40px;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 22px;
+  text-align: center;
+  border: 1px solid #015aa8;
+  background-color: #015aa8;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (min-width: 320px) {
+  .promoForm__btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .promoForm__btn {
+    width: 220px;
+  }
+}
+
+.promoForm form>input {
+  border: 1px solid #999999;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.promoForm .form-control::placeholder {
+  color: #c5c5c5;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.needs-validation .form-label {
+  /* font-family: Proxima Nova; */
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: middle;
+  color: #101010;
+}
+
+.form-check-label {
+  color: #41474d;
+}
+
+.form-check-label a {
+  color: inherit;
+}
+
+.about {
+  padding: clamp(6.25rem, 5.893rem + 1.79vw, 7.5rem) 0;
+  color: #101010;
+  /* font-family: Proxima Nova; */
+}
+
+.about__title {
+  font-weight: 600;
+  font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+  line-height: clamp(2rem, 1.714rem + 1.43vw, 3rem);
+  padding-bottom: 5px;
+  margin-bottom: clamp(1.5rem, 1.036rem + 2.32vw, 3.125rem);
+}
+
+.about__title::after {
+  content: "";
+  width: 160px;
+  height: 2px;
+  background-color: #41474d;
+  display: block;
+  margin-top: 5px;
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem);
+}
+
+@media (max-width: 1000px) {
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.25rem, 1.071rem + 0.89vw, 1.875rem);
+}
+
+.about__subtitle {
+  font-weight: 600;
+  font-size: clamp(1.125rem, 1.018rem + 0.54vw, 1.5rem);
+  line-height: clamp(1.5rem, 1.357rem + 0.71vw, 2rem);
+  text-wrap: balance;
+}
+
+.about__benefits {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.625rem, 0.446rem + 0.89vw, 1.25rem);
+}
+
+.benefit-item {
+  display: flex;
+  gap: clamp(0.625rem, 0.554rem + 0.36vw, 0.875rem);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.benefit-item img {
+  height: fit-content;
+}
+
+.about__img img {
+  border-radius: 10px;
 }
