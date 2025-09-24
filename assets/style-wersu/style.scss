@@ -285,12 +285,7 @@ header {
       }
 
       .link,
-<<<<<<< HEAD:assets/style-wersu/style.scss
-      .links,
-        {
-=======
       .links {
->>>>>>> c5ee07f87a42521cc4e23dc319a9c2d55dd8cdda:assets/css/desktop/style.scss
         font-style: normal;
         white-space: nowrap;
         font-weight: 500;
@@ -374,56 +369,6 @@ header {
         // }
         .catalogList { display:flex; gap:32px; opacity: 0; pointer-events: none;
           transition: opacity .3s ease;
-<<<<<<< HEAD:assets/style-wersu/style.scss
-          background-color: #fff;
-          padding: 50px 0;
-          position: absolute;
-          top: 100%;
-          overflow-y: auto;
-          left: 0;
-          right: 0;
-          border: 1px solid #E4E4E4;
-          box-shadow: 7px 10px 37px rgba(11, 69, 127, 0.07);
-
-          >div>div {
-            row-gap: 40px;
-            column-gap: 50px;
-            //grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-          }
-
-          a {
-            text-decoration: none !important;
-          }
-
-          &-el {
-            flex-grow: 1;
-
-            img {
-              max-height: 160px;
-              max-width: 275px;
-            }
-
-            >div {
-              h2 {
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 25px;
-                margin-bottom: 0;
-                color: #000;
-              }
-
-              p {
-                margin-bottom: 0;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 19px;
-                color: #000;
-              }
-            }
-          }
-=======
             background-color: #F3F3F3;
             // padding: 50px 0;
             position: absolute;
@@ -441,7 +386,6 @@ header {
               height: 340px;
               background-color: #C5C5C5;
             }
->>>>>>> c5ee07f87a42521cc4e23dc319a9c2d55dd8cdda:assets/css/desktop/style.scss
         }
         .catalogList-main { list-style:none; margin:0; padding:30px 30px 0 30px; width:280px; flex: 1;}
         .catalogList-main li { cursor:pointer; padding:8px 30px; border-radius:4px;
@@ -1743,9 +1687,6 @@ footer {
   }
 }
 
-
-<<<<<<< HEAD:assets/style-wersu/style.scss
-=======
   .contacts {
     gap: 60px;
 
@@ -1791,8 +1732,6 @@ footer {
       }
     }
   }
-}
->>>>>>> c5ee07f87a42521cc4e23dc319a9c2d55dd8cdda:assets/css/desktop/style.scss
 
 .modelMainBlock {
   &-info {
@@ -2782,27 +2721,14 @@ footer {
       row-gap: 10px;
 
       >a>p {
-<<<<<<< HEAD:assets/style-wersu/style.scss
         color: #000;
-=======
-        font-family: Proxima Nova;
-        font-weight: 400;
-        font-style: Regular;
->>>>>>> c5ee07f87a42521cc4e23dc319a9c2d55dd8cdda:assets/css/desktop/style.scss
         font-size: 16px;
         line-height: 24px;
       }
 
-<<<<<<< HEAD:assets/style-wersu/style.scss
-      >div {
-        row-gap: 10px;
-
-=======
-
       >div {
         row-gap: 20px;
 
->>>>>>> c5ee07f87a42521cc4e23dc319a9c2d55dd8cdda:assets/css/desktop/style.scss
         >div {
           column-gap: 14px;
 
