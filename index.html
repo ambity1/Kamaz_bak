@@ -20,13 +20,14 @@
 </head>
 
 <body>
-    <header class="d-none d-md-block">
-        <div class="header_upper">
-            <div class="container d-flex align-items-center justify-content-between">
-                <div class="text-uppercase">
-                    Официальный дилер JAECOO - Башавтоком
-                </div>
-                <div class="d-flex align-items-center header_upper-contacts">
+    <!-- <header class="d-none d-md-block">
+    <div class="header_upper">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="text-uppercase">
+                Официальный дилер JAECOO - Башавтоком
+            </div>
+            <div class="d-flex align-items-center header_upper-contacts">
+                <div class="d-flex align-items-center">
                     <div class="d-flex align-items-center">
                         <div class="d-flex align-items-center">
                             <img src="assets/img/headericons/loc.svg" alt="">
@@ -36,78 +37,81 @@
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
-                        <div class="d-flex align-items-center">
-                            <img src="assets/img/headericons/tel.svg" alt="">
-                        </div>
-                        <a href="tel:+73472165577" style="white-space: nowrap;">
-                            +7 (347) 216-55-77
-                        </a>
+                        <img src="assets/img/headericons/tel.svg" alt="">
                     </div>
+                    <a href="tel:+73472165577" style="white-space: nowrap;">
+                        +7 (347) 216-55-77
+                    </a>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header> -->
     <div class="sticky-header d-flex">
         <div class="header_mid position-relative flex-grow-1">
             <div class="container d-flex justify-content-between align-items-center h-100">
-                <div class="logo d-flex align-items-center">
-                    <a href="/" id="logo" class="d-flex flex-row align-items-center">
-                        <img src="media/header/logo.svg">
-                    </a>
+                <div class="d-flex align-items-center">
+                    <div class="logo d-flex align-items-center">
+                        <a href="/" id="logo" class="d-flex flex-row align-items-center">
+                            <img src="media/header/logo.svg">
+                        </a>
+                    </div>
+                    <div id="logo_bash" class="d-none d-xl-flex align-items-center justify-content-center"><img
+                            src="media/header/bashavto_logo_n.svg"></div>
                 </div>
-                <div id="logo_bash" class="d-none d-xxl-flex align-items-center justify-content-center"><img
-                        src="media/header/bashavto_logo_n.svg"></div>
                 <nav class="d-flex flex-grow-1 justify-content-end align-items-center">
                     <div class="d-none d-md-flex align-items-center links">
-                        <a href="/#models" class="d-flex align-items-center">Модели<img
+                        <a href="/#models" class="d-flex align-items-center link">Каталог<img
                                 src="assets/img/headericons/arr_dwn.svg"></a>
-                        <div class="modelsGrid">
-                            <div class="container">
-                                <div class="d-grid">
-                                    <a href="/jaecoo-J7">
-                                        <div class="d-flex flex-column align-items-center modelsGrid-el">
-                                            <img src="media/slider/jaecoo_J7.png">
-                                            <div>
-                                                <h2 class="text-center">J7</h2>
-                                                <p class="text-center">От {{ number_format(config('price.j7'), 0, ',', '
-                                                    ')}} ₽<sup>1</sup></p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="/jaecoo-J8">
-                                        <div class="d-flex flex-column align-items-center modelsGrid-el">
-                                            <img src="media/J8/blue.webp">
-                                            <div>
-                                                <h2 class="text-center">J8</h2>
-                                                <p class="text-center">От {{ number_format(config('price.j8'), 0, ',', '
-                                                    ')}} ₽<sup>4</sup></p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="/jaecoo-J7-LE">
-                                        <div class="d-flex flex-column align-items-center modelsGrid-el">
-                                            <img src="media/J7_LE/white2.png">
-                                            <div>
-                                                <h2 class="text-center">J7 LE</h2>
-                                                <p class="text-center">От {{ number_format(config('price.j7-le'), 0,
-                                                    ',', '') }} ₽<sup>3</sup></p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="/j5premiere">
-                                        <div class="d-flex flex-column align-items-center modelsGrid-el">
-                                            <img src="media/j5Premiere/picj5.webp">
-                                            <div>
-                                                <h2 class="text-center">J5</h2>
-                                                <p class="text-center">СКОРО В РОССИИ</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+                        <div class="catalogList">
+                            <ul class="catalogList-main">
+                                <li>Серийная автотехника</li>
+                                <li>Пассажирская техника</li>
+                                <li>Спец. техника</li>
+                                <li>Дорожно-коммунальная техника</li>
+                                <li>Прицепная техника</li>
+                            </ul>
+                            <div class="catalogList-line"></div>
+                            <div class="catalogList-sub">
+                                <ul>
+                                    <li>Тягачи</li>
+                                    <li>Самосвалы</li>
+                                    <li>Бортовые автомобили</li>
+                                    <li>Шасси</li>
+                                </ul>
+                                <ul>
+                                    <li>Городские автобусы НЕФАЗ
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.99115 13.3333C9.85392 13.3335 9.718 13.3046 9.59117 13.2482C9.46435 13.1919 9.3491 13.1092 9.25203 13.0049L5.15423 8.59993C5.05123 8.47643 4.99612 8.31524 5.00021 8.14945C5.00431 7.98366 5.0673 7.82584 5.17626 7.7084C5.28522 7.59095 5.43188 7.5228 5.58612 7.51793C5.74036 7.51305 5.89049 7.57183 6.00568 7.68219L9.99115 11.9658L13.9766 7.68219C14.0905 7.56396 14.2431 7.49855 14.4014 7.50002C14.5597 7.5015 14.7112 7.56976 14.8231 7.6901C14.9351 7.81043 14.9986 7.97322 15 8.14339C15.0014 8.31357 14.9405 8.47752 14.8305 8.59993L10.7327 13.0049C10.6353 13.1095 10.5197 13.1923 10.3924 13.2487C10.2652 13.3051 10.1288 13.3338 9.99115 13.3333Z"
+                                                fill="#101010" />
+                                        </svg>
+                                    <li style="font-weight: 400;">— Большой класс</li>
+                                    <li style="font-weight: 400;">— Средний класс</li>
+                                    </li>
+
+                                    <li>Пригородные автобусы НЕФАЗ</li>
+                                    <li>Междугородные автобусы НЕФАЗ</li>
+                                </ul>
+                                <ul>
+                                    <li>Автомобили с КМУ</li>
+                                    <li>Автобетоносмесители</li>
+                                    <li>Фургоны </li>
+                                    <li>Вахтовые автобусы на шасси КАМАЗ с КМУ</li>
+                                </ul>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                                <ul>
+                                    <li>Прицепы</li>
+                                    <li>Полуприцепы</li>
+                                </ul>
                             </div>
+
                         </div>
                     </div>
-                    <div class="d-md-flex d-none align-items-center links">
+                    <!-- <div class="d-md-flex d-none align-items-center links">
                         <a class="align-items-center d-none d-lg-flex">Владельцам<img
                                 src="assets/img/headericons/arr_dwn.svg"></a>
                         <div class="ownerGrid">
@@ -119,20 +123,23 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!--                {{&#45;&#45; <a href="/#aboutDealer" toblock="aboutDealer" class="link d-none d-md-block">О дилере</a>&#45;&#45;}}-->
-                    <!--                {{&#45;&#45; <a href="/news" class="link d-none d-md-block">Новости</a>&#45;&#45;}}-->
+                    </div> -->
+                    <a href="/#aboutDealer" toblock="aboutDealer" class="link d-none d-md-block">Сервис</a>
+                    <a href="/news" class="link d-none d-md-block">О компании</a>
                     <a href="/#contacts" toblock="contacts" class="link d-none d-lg-block">Контакты</a>
-                    <div class="d-flex align-items-center d-none d-md-flex" style="gap: 8px">
+                    <div class="d-flex align-items-center d-none d-md-flex header_mid-contacts">
                         <div class="d-flex align-items-center">
                             <img src="assets/img/headericons/tel-b.svg" alt="">
                         </div>
-                        <a href="tel:+73472165577" style="white-space: nowrap; color: black; font-size: 16px">
-                            +7 (347) 216-55-77
-                        </a>
+                        <div class="d-flex flex-column">
+                            <a href="tel:+73472002015" style="white-space: nowrap; color: black; font-size: 16px">
+                                +7 (347) 200-20-15
+                            </a>
+                            <p class="mb-0">Отдел продаж</p>
+                        </div>
                     </div>
-                    <div class="btn btn-black-trnsp d-none d-xxl-block askMe askMeSpec" style="white-space: nowrap;">
-                        Получить спецпредложение
+                    <div class="btn btn-blue-black d-none d-xxl-block askMe askMeSpec" style="white-space: nowrap;">
+                        Заказать звонок
                     </div>
                     <div class="header_mid-burger d-flex align-items-center justify-content-center d-xxl-none"
                         onclick=" document.querySelector('body').style.overflowY='hidden'; document.querySelector('.sidenav').classList.add('active');">
@@ -142,6 +149,42 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainItems = document.querySelectorAll('.catalogList-main li');
+            const subGroups = document.querySelectorAll('.catalogList-sub > ul');
+
+            if (!mainItems.length || !subGroups.length) return;
+
+            const show = (i) => {
+                mainItems.forEach(li => li.classList.remove('active'));
+                subGroups.forEach(ul => ul.classList.remove('active'));
+                mainItems[i]?.classList.add('active');
+                subGroups[i]?.classList.add('active');
+            };
+
+            // стартуем с первой категории
+            show(0);
+
+            // по ховеру и клику — показываем соответствующую группу
+            mainItems.forEach((li, idx) => {
+                li.addEventListener('mouseenter', () => show(idx));
+                li.addEventListener('click', () => show(idx));
+            });
+
+            // вложенные подкатегории со стрелкой (аккордеон)
+            document.querySelectorAll('.catalogList-sub li > ul').forEach((ul) => {
+                const parent = ul.parentElement;
+                parent.classList.add('has-children');
+                parent.addEventListener('click', (e) => {
+                    // не трогаем клики по ссылкам внутри
+                    if (e.target.closest('a')) return;
+                    parent.classList.toggle('open');
+                    e.stopPropagation();
+                });
+            });
+        });
+    </script>
 
     <h1 class="d-none" style="display: none">Башавтоком JAECOO - официальный дилер JAECOO в Уфе</h1>
     <main class="main-page">
@@ -176,7 +219,6 @@
                                             <a href="/jaecoo-J7" class="btn btn-trnsp-white">О модели</a>
                                         </div>
                                     </div>
-                                    <div class="swiper-pagination w-100 d-flex d-md-none"></div>
                                 </div>
                                 <div>
                                     <p
@@ -184,24 +226,6 @@
                                         Изучите все условия кредита/рассрочки на сайте jaecoo.ru</p>
                                     <p style="text-transform: uppercase; color: white; font-size: 14px; opacity: 80%;">
                                         Оценивайте свои финансовые возможности и риски</p>
-                                </div>
-                                <div class="info-bottom d-none d-md-flex">
-                                    <div class="d-flex flex-column align-items-center">
-                                        <div class="swiper-pagination w-100"></div>
-                                        <p class="mb-0" style="white-space: break-spaces">Стильный, надежный </br>и
-                                            высокотехнологичный</p>
-                                    </div>
-                                    <div class="flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <p class="mb-0">JAECOO – это символ свободы и внутренней силы. Он для тех, кто
-                                            хочет исследовать мир и себя в нем, чтобы жить на полную в разных режимах
-                                        </p>
-                                    </div>
-                                    <div style="background-image: url('media/slider/main/winter-j7-sm.webp'); background-size: cover"
-                                        class="d-none align-items-center justify-content-center d-xl-flex">
-                                        <div>
-                                            <a class="btn btn-trnsp-white" href="/jaecoo-J7">Подробнее о модели</a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -226,7 +250,6 @@
                                         <p class="mb-0 text-description ">победитель в номинации «Новинка года в
                                             массовом сегменте 2024»</p>
                                     </div>
-                                    <div class="swiper-pagination w-100 d-flex d-md-none"></div>
                                 </div>
                                 <div>
                                     <p
@@ -234,22 +257,6 @@
                                         Изучите все условия кредита/рассрочки на сайте jaecoo.ru</p>
                                     <p style="text-transform: uppercase; color: white; font-size: 14px; opacity: 80%;">
                                         Оценивайте свои финансовые возможности и риски</p>
-                                </div>
-                                <div class="info-bottom d-none d-md-flex">
-                                    <div class="d-flex flex-column align-items-start">
-                                        <div class="swiper-pagination w-100"></div>
-                                        <p class="mb-0">JAECOO J8 - новый флагманский<br>кроссовер бренда. </p>
-                                    </div>
-                                    <div class="flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <p class="mb-0">JAECOO J8 в своей стихии на асфальте, на грунтовых или
-                                            заснеженных дорогах и даже на бездорожье.</p>
-                                    </div>
-                                    <div style="background-image: url('media/slider/main/J8-car-year-sm.webp')"
-                                        class="d-none align-items-center justify-content-center d-xl-flex">
-                                        <div>
-                                            <a class="btn btn-trnsp-white" href="/jaecoo-J8">Подробнее о модели</a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -276,7 +283,6 @@
                                             <button class="btn btn-trnsp-white askMe askMeTestDrive">Тест-драйв</button>
                                         </div>
                                     </div>
-                                    <div class="swiper-pagination w-100 d-flex d-md-none"></div>
                                 </div>
                                 <div>
                                     <p
@@ -284,23 +290,6 @@
                                         Изучите все условия кредита/рассрочки на сайте jaecoo.ru</p>
                                     <p style="text-transform: uppercase; color: white; font-size: 14px; opacity: 80%;">
                                         Оценивайте свои финансовые возможности и риски</p>
-                                </div>
-                                <div class="info-bottom d-none d-md-flex">
-                                    <div class="d-flex flex-column align-items-center">
-                                        <div class="swiper-pagination w-100"></div>
-                                        <p class="mb-0" style="white-space: break-spaces">JAECOO J8 - новый флагманский
-                                            кроссовер бренда.</p>
-                                    </div>
-                                    <div class="flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <p class="mb-0">JAECOO J8 в своей стихии на асфальте, на грунтовых или
-                                            заснеженных дорогах и даже на бездорожье.</p>
-                                    </div>
-                                    <div style="background-image: url('media/slider/main/podrobneeJ8.webp'); background-size: cover"
-                                        class="d-none align-items-center justify-content-center d-xl-flex">
-                                        <div>
-                                            <a class="btn btn-trnsp-white" href="/jaecoo-J8">Подробнее о модели</a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -326,7 +315,6 @@
                                             <button class="btn btn-trnsp-white askMe askMeTestDrive">Тест-драйв</button>
                                         </div>
                                     </div>
-                                    <div class="swiper-pagination w-100 d-flex d-md-none"></div>
                                 </div>
                                 <div>
                                     <p
@@ -335,29 +323,13 @@
                                     <p style="text-transform: uppercase; color: white; font-size: 14px; opacity: 80%;">
                                         Оценивайте свои финансовые возможности и риски</p>
                                 </div>
-                                <div class="info-bottom d-none d-md-flex">
-                                    <div class="d-flex flex-column align-items-center">
-                                        <div class="swiper-pagination w-100"></div>
-                                        <p class="mb-0">Успейте воспользоваться выгодой <br> до 600 000
-                                            рублей<sup>2</sup></p>
-                                    </div>
-                                    <div class="flex-grow-1 d-flex align-items-center justify-content-center">
-                                        <p class="mb-0">JAECOO – это символ свободы и внутренней силы. <br> Он для тех,
-                                            кто хочет исследовать мир и себя в нем,<br> чтобы жить на полную в разных
-                                            режимах</p>
-                                    </div>
-                                    <div style="background-image: url('media/slider/main/privelegiya-sm.webp')"
-                                        class="d-none align-items-center justify-content-center d-xl-flex">
-                                        <div>
-                                            <button class="btn btn-trnsp-white askMe askMeSpec">Получить выгоду</button>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </section>
 
                 </div>
+                <div class="swiper-pagination w-100"></div>
+
             </div>
         </div>
         <script>
@@ -1807,56 +1779,63 @@
             <div class="footerTop-logo">
                 <a href="/" class="d-flex flex-column align-items-start">
                     <img src="media/footer/logo_w.svg" alt="">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img src="media/footer/logo.svg" alt="">
-                    </div>
-                    <p>Башавтоком — официальный дилер JAECOO в Башкирии</p>
                 </a>
             </div>
             <div class="footerTop-links">
                 <div>
-                    <p>Модельный ряд</p>
-                    <nav class="d-flex flex-column">
-                        <a href="/jaecoo-J7">J7</a>
-                        <a href="/jaecoo-J7-LE">J7-LE</a>
-                        <a href="/jaecoo-J8">J8</a>
-                        <a href="/j5premiere">J5</a>
-                    </nav>
-                </div>
-                <div>
-                    <p>Покупка</p>
-                    <nav class="d-flex flex-column">
-                        <a href="/#specials" toblock="specials">Специальные предложения</a>
-                        <a class="askMe askMeTestDrive">Запись на тест-драйв</a>
-                        <a class="askMe askMeConsultation">Консультация</a>
-                    </nav>
-                </div>
-            </div>
-            <div class="footerTop-links d-none d-lg-block">
-                <div>
                     <p>О компании</p>
                     <nav class="d-flex flex-column">
-                        <a href="/#contacts" toblock="contacts">Контакты</a>
-                        <a href="/#aboutDealer" toblock="aboutDealer">О компании</a>
+                        <a href="/about">О компании</a>
+                        <a href="/contacts">Контакты</a>
                     </nav>
                 </div>
             </div>
             <div class="footerTop-links">
-                <div class="d-block d-lg-none">
-                    <p>О компании</p>
+                <div>
+                    <p>Сервис и гарантии</p>
                     <nav class="d-flex flex-column">
-                        <a href="/#contacts" toblock="contacts">Контакты</a>
-                        <a href="/#aboutDealer" toblock="aboutDealer">О компании</a>
+                        <a href="/#specials" toblock="specials">Гарантия</a>
+                        <a class="askMe askMeTestDrive">Политика в области сервиса</a>
+                        <a class="askMe askMeConsultation">Гарантия на запчастные части</a>
+                        <a class="askMe askMeConsultation">Служба помощи клиентам</a>
+                        <a class="askMe askMeConsultation">Прайсы на услуги сервиса</a>
                     </nav>
                 </div>
+            </div>
+            <div class="footerTop-links">
+                <div>
+                    <p>Каталог</p>
+                    <nav class="d-flex flex-column">
+                        <a href="/#specials" toblock="specials">Серийная автотехника</a>
+                        <a class="askMe askMeTestDrive">Пассажирская техника</a>
+                        <a class="askMe askMeConsultation">Спец. техника</a>
+                        <a class="askMe askMeConsultation">Дорожно-коммунальная техника</a>
+                        <a class="askMe askMeConsultation">Прицепная техника</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="footerTop-links">
                 <div class="footerTop-contacts">
                     <p>Контакты</p>
-                    <div class="footerTop-contacts--item">
-                        <p>г. Уфа, ул. Адмирала Макарова, 32</p>
+                    <div class="footerTop-contacts--list">
+                        <div>
+                            <p>Сервисный центр</p>
+                            <p>+7 (347) 293-43-43</p>
+                        </div>
+                        <div>
+                            <p>Отдел продаж</p>
+                            <p>+7 (347) 200-20-15</p>
+                        </div>
+                        <a href="mailto:feedback@autolider-ufa.ru">
+                            feedback@autolider-ufa.ru
+                        </a>
                     </div>
-                    <div class="footerTop-contacts--item">
-                        <a href="tel:+73472165577">+7 (347) 216-55-77</a>
-                    </div>
+                    <p>
+                        Республика Башкортостан, р-н Иглинский,
+                        км 1491 км 600 м
+                        Самара – Уфа – Челябинск
+                    </p>
+
                     <a class="btn btn-white-trnsp askMe askMeConsultation">Получить консультацию</a>
                 </div>
             </div>
@@ -1949,7 +1928,15 @@
     <div class="sidenav">
         <div class="sidenav-block d-flex flex-column">
             <div class="d-flex align-items-center justify-content-between">
-                <img src="media/header/bashavto_logo_n.svg" alt="" class="logo">
+                <div class="sidenav-block-breadcrumb"
+                    onclick="document.querySelector('.sidenav').classList.remove('active'); document.querySelector('body').style='overflow-y: auto;';">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.8459 9.6154L2.07662 9.6154L5.23047 6.46155C5.38431 6.30771 5.38431 6.07694 5.23047 5.92309C5.15354 5.84617 5.03816 5.80771 4.96124 5.80771C4.88432 5.80771 4.76893 5.84617 4.69201 5.92309L0.884314 9.73078C0.845852 9.76924 0.807391 9.80771 0.807391 9.84617C0.768929 9.92309 0.768929 10.0385 0.807391 10.1539C0.845852 10.1923 0.845852 10.2308 0.884314 10.2692L4.69201 14.0769C4.84585 14.2308 5.07662 14.2308 5.23047 14.0769C5.38431 13.9231 5.38431 13.6923 5.23047 13.5385L2.07662 10.3846L18.8459 10.3846C19.0766 10.3846 19.2305 10.2308 19.2305 10C19.2305 9.76925 19.0766 9.6154 18.8459 9.6154Z"
+                            fill="#101010" />
+                    </svg>
+                    <p>Главная</p>
+                </div>
                 <div class="close"
                     onclick="document.querySelector('.sidenav').classList.remove('active'); document.querySelector('body').style='overflow-y: auto;';">
                     <div></div>
@@ -1957,57 +1944,184 @@
                 </div>
             </div>
             <div class="sidenav-block-desc d-flex flex-column">
-                <div class="modelsList d-flex flex-column">
-                    <p class="text-uppercase">Модельный ряд</p>
-                    <div class="d-flex flex-column">
-                        <a href="/jaecoo-J7">
-                            <div>J7</div>
-                        </a>
-                        <a href="/jaecoo-J7-LE">
-                            <div>J7-LE</div>
-                        </a>
-                        <a href="/jaecoo-J8">
-                            <div>J8</div>
-                        </a>
-                        <a href="/j5premiere">
-                            <div>J5</div>
-                        </a>
-                    </div>
+                <div class="navList d-flex flex-column">
+                    <p class="" data-switch="catalog">Каталог <svg width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 12.0106C16.0002 12.1753 15.9655 12.3384 15.8978 12.4906C15.8302 12.6428 15.731 12.7811 15.6059 12.8976L10.3199 17.8149C10.1717 17.9385 9.97829 18.0047 9.77934 17.9997C9.58039 17.9948 9.391 17.9192 9.25007 17.7885C9.10914 17.6577 9.02736 17.4817 9.02151 17.2967C9.01567 17.1116 9.0862 16.9314 9.21863 16.7932L14.359 12.0106L9.21863 7.22804C9.07676 7.09138 8.99825 6.90833 9.00003 6.71834C9.0018 6.52834 9.08371 6.34659 9.22812 6.21224C9.37252 6.07789 9.56786 6.00168 9.77207 6.00003C9.97628 5.99837 10.173 6.07141 10.3199 6.20341L15.6059 11.1208C15.7314 11.2376 15.8308 11.3764 15.8984 11.5291C15.9661 11.6818 16.0006 11.8454 16 12.0106Z"
+                                fill="#101010" />
+                        </svg>
+                    </p>
+                    <p class="">Сервис</p>
+                    <p class="">О компании</p>
+                    <p class="">Контакты</p>
                 </div>
                 <div class="sidenav-block-contacts d-flex flex-column">
-                    <a href="/#contacts" toblock="contacts">
-                        <p class="text-uppercase">Контакты</p>
-                    </a>
+
                     <div class="d-flex flex-column">
                         <div class="d-flex align-items-center">
                             <div class="d-flex align-items-center">
                                 <img src="assets/img/contacts/mappin.svg" alt="">
                             </div>
-                            <p>г. Уфа, ул. Адмирала Макарова, 32</p>
+                            <p>Республика Башкортостан, р-н Иглинский,
+                                км 1491 км 600 м
+                                Самара – Уфа – Челябинск</p>
                         </div>
-                        <a href="tel:+73472165577">
-                            <div class="d-flex align-items-center">
-                                <div class="d-flex align-items-center">
-                                    <img src="assets/img/contacts/phone.svg" alt="">
-                                </div>
-                                <p>+7 (347) 216-55-77</p>
+                        <div class="d-flex sidenav-block-contacts-phone">
+                            <div class="d-flex">
+                                <img style="padding-top: 8px;" src="assets/img/contacts/phone.svg" alt="">
                             </div>
-                        </a>
+                            <div class="d-flex flex-column sidenav-block-contacts-phone-list">
+                                <div>
+                                    <a href="tel:+73472155577">+7 (347) 216-55-77</a>
+                                    <p>Отдел продаж</p>
+                                </div>
+                                <div>
+                                    <a href="tel:+73472155577">+7 (347) 216-55-77</a>
+                                    <p>Сервисный центр</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div class="sidenav-block-btns d-flex flex-column">
-                    <div class="btn btn-black-trnsp askMe askMeSpec"
+                    <div class="btn btn-blue-black askMe askMeSpec"
                         onclick="document.querySelector('.sidenav').classList.remove('active'); document.querySelector('body').style='overflow-y: auto;';">
-                        Получить спецпредложение
+                        Заказать звонок
                     </div>
-                    <div class="btn btn-trnsp-black askMe askMeTestDrive"
+                </div>
+            </div>
+        </div>
+        <div class="sidenav-block d-flex flex-column">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="sidenav-block-breadcrumb" data-switch="back">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.8459 9.6154L2.07662 9.6154L5.23047 6.46155C5.38431 6.30771 5.38431 6.07694 5.23047 5.92309C5.15354 5.84617 5.03816 5.80771 4.96124 5.80771C4.88432 5.80771 4.76893 5.84617 4.69201 5.92309L0.884314 9.73078C0.845852 9.76924 0.807391 9.80771 0.807391 9.84617C0.768929 9.92309 0.768929 10.0385 0.807391 10.1539C0.845852 10.1923 0.845852 10.2308 0.884314 10.2692L4.69201 14.0769C4.84585 14.2308 5.07662 14.2308 5.23047 14.0769C5.38431 13.9231 5.38431 13.6923 5.23047 13.5385L2.07662 10.3846L18.8459 10.3846C19.0766 10.3846 19.2305 10.2308 19.2305 10C19.2305 9.76925 19.0766 9.6154 18.8459 9.6154Z"
+                            fill="#101010" />
+                    </svg>
+                    <p>Назад</p>
+                </div>
+                <div class="close"
+                    onclick="document.querySelector('.sidenav').classList.remove('active'); document.querySelector('body').style='overflow-y: auto;';">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="sidenav-block-desc d-flex flex-column">
+                <div class="navList d-flex flex-column">
+                    <div class="navList-item">
+                        <p class="navList-item-title">Серийная автотехника <svg width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.9894 16C11.8247 16.0002 11.6616 15.9655 11.5094 15.8978C11.3572 15.8302 11.2189 15.731 11.1024 15.6059L6.18508 10.3199C6.06147 10.1717 5.99534 9.97829 6.00026 9.77934C6.00517 9.58039 6.08077 9.391 6.21152 9.25007C6.34227 9.10914 6.51825 9.02736 6.70334 9.02151C6.88843 9.01567 7.06858 9.0862 7.20681 9.21863L11.9894 14.359L16.772 9.21863C16.9086 9.07676 17.0917 8.99825 17.2817 9.00003C17.4717 9.0018 17.6534 9.08371 17.7878 9.22812C17.9221 9.37252 17.9983 9.56786 18 9.77207C18.0016 9.97628 17.9286 10.173 17.7966 10.3199L12.8792 15.6059C12.7624 15.7314 12.6236 15.8308 12.4709 15.8984C12.3182 15.9661 12.1546 16.0006 11.9894 16Z"
+                                    fill="#101010" />
+                            </svg>
+                        </p>
+                        <div class="navList-item-list">
+                            <p>Тягачи</p>
+                            <p>Самосвалы</p>
+                            <p>Бортовые автомобили</p>
+                            <p>Шасси</p>
+                        </div>
+                    </div>
+                    <div class="navList-item">
+                        <p class="navList-item-title">Пассажирская техника <svg width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.9894 16C11.8247 16.0002 11.6616 15.9655 11.5094 15.8978C11.3572 15.8302 11.2189 15.731 11.1024 15.6059L6.18508 10.3199C6.06147 10.1717 5.99534 9.97829 6.00026 9.77934C6.00517 9.58039 6.08077 9.391 6.21152 9.25007C6.34227 9.10914 6.51825 9.02736 6.70334 9.02151C6.88843 9.01567 7.06858 9.0862 7.20681 9.21863L11.9894 14.359L16.772 9.21863C16.9086 9.07676 17.0917 8.99825 17.2817 9.00003C17.4717 9.0018 17.6534 9.08371 17.7878 9.22812C17.9221 9.37252 17.9983 9.56786 18 9.77207C18.0016 9.97628 17.9286 10.173 17.7966 10.3199L12.8792 15.6059C12.7624 15.7314 12.6236 15.8308 12.4709 15.8984C12.3182 15.9661 12.1546 16.0006 11.9894 16Z"
+                                    fill="#101010" />
+                            </svg>
+
+                        </p>
+                        <div class="navList-item-list">
+                            <p>Городские автобусы НЕФАЗ<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9894 16C11.8247 16.0002 11.6616 15.9655 11.5094 15.8978C11.3572 15.8302 11.2189 15.731 11.1024 15.6059L6.18508 10.3199C6.06147 10.1717 5.99534 9.97829 6.00026 9.77934C6.00517 9.58039 6.08077 9.391 6.21152 9.25007C6.34227 9.10914 6.51825 9.02736 6.70334 9.02151C6.88843 9.01567 7.06858 9.0862 7.20681 9.21863L11.9894 14.359L16.772 9.21863C16.9086 9.07676 17.0917 8.99825 17.2817 9.00003C17.4717 9.0018 17.6534 9.08371 17.7878 9.22812C17.9221 9.37252 17.9983 9.56786 18 9.77207C18.0016 9.97628 17.9286 10.173 17.7966 10.3199L12.8792 15.6059C12.7624 15.7314 12.6236 15.8308 12.4709 15.8984C12.3182 15.9661 12.1546 16.0006 11.9894 16Z"
+                                        fill="#101010" />
+                                </svg>
+
+                            </p>
+                            <p>— Большой класс</p>
+                            <p>— Средний класс</p>
+                            <p>Пригородные автобусы НЕФАЗ</p>
+                            <p>Междугородные автобусы НЕФАЗ</p>
+                        </div>
+                    </div>
+                    <div class="navList-item">
+                        <p class="navList-item-title">Спец. техника<svg width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.9894 16C11.8247 16.0002 11.6616 15.9655 11.5094 15.8978C11.3572 15.8302 11.2189 15.731 11.1024 15.6059L6.18508 10.3199C6.06147 10.1717 5.99534 9.97829 6.00026 9.77934C6.00517 9.58039 6.08077 9.391 6.21152 9.25007C6.34227 9.10914 6.51825 9.02736 6.70334 9.02151C6.88843 9.01567 7.06858 9.0862 7.20681 9.21863L11.9894 14.359L16.772 9.21863C16.9086 9.07676 17.0917 8.99825 17.2817 9.00003C17.4717 9.0018 17.6534 9.08371 17.7878 9.22812C17.9221 9.37252 17.9983 9.56786 18 9.77207C18.0016 9.97628 17.9286 10.173 17.7966 10.3199L12.8792 15.6059C12.7624 15.7314 12.6236 15.8308 12.4709 15.8984C12.3182 15.9661 12.1546 16.0006 11.9894 16Z"
+                                    fill="#101010" />
+                            </svg>
+                        </p>
+                        <div class="navList-item-list">
+                            <p>Автомобили с КМУ</p>
+                            <p>Автобетоносмесители</p>
+                            <p>Фургоны </p>
+                            <p>Вахтовые автобусы на шасси КАМАЗ</p>
+                        </div>
+                    </div>
+                    <div class="navList-item">
+                        <p class="navList-item-title">Дорожно-коммунальная техника</p>
+                    </div>
+                    <div class="navList-item">
+                        <p class="navList-item-title">Прицепная техника <svg width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.9894 16C11.8247 16.0002 11.6616 15.9655 11.5094 15.8978C11.3572 15.8302 11.2189 15.731 11.1024 15.6059L6.18508 10.3199C6.06147 10.1717 5.99534 9.97829 6.00026 9.77934C6.00517 9.58039 6.08077 9.391 6.21152 9.25007C6.34227 9.10914 6.51825 9.02736 6.70334 9.02151C6.88843 9.01567 7.06858 9.0862 7.20681 9.21863L11.9894 14.359L16.772 9.21863C16.9086 9.07676 17.0917 8.99825 17.2817 9.00003C17.4717 9.0018 17.6534 9.08371 17.7878 9.22812C17.9221 9.37252 17.9983 9.56786 18 9.77207C18.0016 9.97628 17.9286 10.173 17.7966 10.3199L12.8792 15.6059C12.7624 15.7314 12.6236 15.8308 12.4709 15.8984C12.3182 15.9661 12.1546 16.0006 11.9894 16Z"
+                                    fill="#101010" />
+                            </svg>
+                        </p>
+                        <div class="navList-item-list">
+                            <p>Прицепы</p>
+                            <p>Полуприцепы</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sidenav-block-btns d-flex flex-column">
+                    <div class="btn btn-blue-black askMe askMeSpec"
                         onclick="document.querySelector('.sidenav').classList.remove('active'); document.querySelector('body').style='overflow-y: auto;';">
-                        Записаться на тест-драйв
+                        Заказать звонок
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sidenav = document.querySelector('.sidenav');
+            if (!sidenav) return;
+
+            const blocks = sidenav.querySelectorAll('.sidenav-block');
+            if (blocks.length < 2) return;
+
+            const first = blocks[0]; // первый экран
+            const second = blocks[1]; // второй экран
+
+            const show = (el) => {
+                blocks.forEach(b => b.classList.remove('active'));
+                el.classList.add('active');
+            };
+
+            // по умолчанию показываем первый блок
+            show(first);
+
+            // делегирование кликов по data-switch
+            sidenav.addEventListener('click', (e) => {
+                const trigger = e.target.closest('[data-switch]');
+                if (!trigger) return;
+
+                const action = trigger.dataset.switch;
+                if (action === 'catalog') show(second);
+                if (action === 'back') show(first);
+            });
+        });
+    </script>
 
     <div class="ask-overlay ask-call align-items-center justify-content-center fromAskMeSpec" style="display: none;">
         <div class="d-flex justify-content-center ask-block w-100">
