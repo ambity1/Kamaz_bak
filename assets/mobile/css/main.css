@@ -76,11 +76,9 @@ input {
 .btn:hover {
   color: #fff;
   background: #cf1c1d;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(50, 50, 50, 0.1), 0 3px 1px -2px rgba(50, 50, 50, 0.1), 0 1px 5px 0 rgba(50, 50, 50, 0.15);
   box-shadow: 0 2px 2px 0 rgba(50, 50, 50, 0.1), 0 3px 1px -2px rgba(50, 50, 50, 0.1), 0 1px 5px 0 rgba(50, 50, 50, 0.15);
 }
 .btn:focus {
-  -webkit-box-shadow: 0 2px 2px 0 rgba(50, 50, 50, 0.1), 0 3px 1px -2px rgba(50, 50, 50, 0.1), 0 1px 5px 0 rgba(50, 50, 50, 0.15);
   box-shadow: 0 2px 2px 0 rgba(50, 50, 50, 0.1), 0 3px 1px -2px rgba(50, 50, 50, 0.1), 0 1px 5px 0 rgba(50, 50, 50, 0.15);
 }
 
@@ -106,7 +104,7 @@ header #sidenav-trigger div {
   position: relative;
   transform: rotate(0deg);
   webkit-transform: rotate(0deg);
-  transition: transform 0.2s, -webkit-transform 0.2s;
+  transition: transform 0.2s;
 }
 header #sidenav-trigger div:after, header #sidenav-trigger div:before {
   position: absolute;
@@ -116,7 +114,7 @@ header #sidenav-trigger div:after {
   bottom: -7px;
   transform: rotate(0deg);
   webkit-transform: rotate(0deg);
-  transition: bottom 0.2s, transform 0.2s, -webkit-transform 0.2s;
+  transition: bottom 0.2s, transform 0.2s;
   transition-delay: 0.2s, 0s, 0s;
 }
 header #sidenav-trigger div:before {
@@ -134,14 +132,14 @@ header #sidenav-trigger div:after, header #sidenav-trigger div:before, header #s
 header #sidenav-trigger.active div {
   transform: rotate(45deg);
   webkit-transform: rotate(45deg);
-  transition: transform 0.2s, -webkit-transform 0.2s;
+  transition: transform 0.2s;
   transition-delay: 0.2s, 0.2s;
 }
 header #sidenav-trigger.active div:after {
   bottom: 0;
   transform: rotate(-90deg);
   webkit-transform: rotate(-90deg);
-  transition: bottom 0.2s, transform 0.2s, -webkit-transform 0.2s;
+  transition: bottom 0.2s, transform 0.2s;
   transition-delay: 0s, 0.2s, 0.2s;
 }
 header #sidenav-trigger.active div:before {
@@ -1112,6 +1110,9 @@ footer .policy a {
   width: 100%;
   border-radius: 0;
 }
+.confirm input::-moz-placeholder {
+  color: #7d7d7d;
+}
 .confirm input::placeholder {
   color: #7d7d7d;
 }
@@ -1129,6 +1130,9 @@ footer .policy a {
   line-height: 40px;
   width: 100%;
   border-radius: 0;
+}
+.confirm select::-moz-placeholder {
+  color: #7d7d7d;
 }
 .confirm select::placeholder {
   color: #7d7d7d;
@@ -1148,6 +1152,9 @@ footer .policy a {
   width: 100%;
   border-radius: 0;
 }
+.confirm textarea::-moz-placeholder {
+  color: #7d7d7d;
+}
 .confirm textarea::placeholder {
   color: #7d7d7d;
 }
@@ -1161,6 +1168,9 @@ footer .policy a {
   width: 100%;
   border-radius: 0;
   background: #fff;
+}
+.confirm select::-moz-placeholder {
+  color: #7d7d7d;
 }
 .confirm select::placeholder {
   color: #7d7d7d;
@@ -1344,6 +1354,7 @@ footer .policy a {
   align-items: center;
 }
 .confirm .container .confirm_payment .change_consent-wrapper .change_consent-row label {
+  width: -moz-max-content;
   width: max-content;
   vertical-align: middle;
   font-size: 0.8rem;
@@ -1387,6 +1398,9 @@ footer .policy a {
   line-height: 40px;
   width: 100%;
   border-radius: 0;
+}
+.confirm .container .cart_bonus input::-moz-placeholder {
+  color: #7d7d7d;
 }
 .confirm .container .cart_bonus input::placeholder {
   color: #7d7d7d;
@@ -1503,6 +1517,9 @@ footer .policy a {
   width: 100%;
   border-radius: 0;
 }
+.signup .signup-center input::-moz-placeholder {
+  color: #b3b3b3;
+}
 .signup .signup-center input::placeholder {
   color: #b3b3b3;
 }
@@ -1547,7 +1564,6 @@ footer .policy a {
   .cart .container .cart_list .cart_prod .card_prod_info h3 {
     font-size: 14px;
   }
-
   #new_clients form {
     font-size: 14px;
   }
@@ -1559,6 +1575,4 @@ footer .policy a {
     width: 102px;
     padding-left: 7px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
