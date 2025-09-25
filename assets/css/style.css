@@ -6419,29 +6419,47 @@ footer p {
   border-radius: 10px;
 }
 
-.equipment {
+.equipment__mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .equipment__mobile {
+    display: flex;
+  }
+}
+
+.equipment__desktop {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .equipment__desktop {
+    display: none;
+  }
+}
+
+.equipment__desktop .equipment {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-.equipment-section {
+.equipment__desktop .equipment-section {
   padding: 90px 0;
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-  .equipment-section {
+  .equipment__desktop .equipment-section {
     padding: 50px 0;
   }
 }
 @media (max-width: 768px) {
-  .equipment-section {
+  .equipment__desktop .equipment-section {
     padding: 35px 0;
   }
 }
-.equipment-wrapper {
+.equipment__desktop .equipment-wrapper {
   display: flex;
   gap: clamp(1.25rem, -1.591rem + 4.55vw, 2.5rem);
 }
-.equipment-header {
+.equipment__desktop .equipment-header {
   padding: clamp(1.875rem, 0.455rem + 2.27vw, 2.5rem) 0;
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1215686275);
   display: flex;
@@ -6450,14 +6468,14 @@ footer p {
   background-color: #fff;
   border-radius: 8px;
 }
-.equipment-header ul {
+.equipment__desktop .equipment-header ul {
   display: flex;
   flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.equipment-header ul li {
+.equipment__desktop .equipment-header ul li {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.33;
@@ -6465,20 +6483,20 @@ footer p {
   cursor: pointer;
   border-bottom: 1px solid #BFD5E9;
 }
-.equipment-header ul li:hover {
+.equipment__desktop .equipment-header ul li:hover {
   background-color: rgba(1, 90, 168, 0.5568627451);
   color: #fff;
 }
-.equipment-header ul li.active {
+.equipment__desktop .equipment-header ul li.active {
   background-color: #015AA8;
   color: #fff;
 }
-.equipment-header button {
+.equipment__desktop .equipment-header button {
   margin-left: clamp(1rem, -1.273rem + 3.64vw, 2rem);
   width: -moz-fit-content;
   width: fit-content;
 }
-.equipment-content {
+.equipment__desktop .equipment-content {
   padding: clamp(1.875rem, 0.455rem + 2.27vw, 2.5rem) clamp(1rem, -1.273rem + 3.64vw, 2rem);
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1215686275);
   display: flex;
@@ -6488,24 +6506,24 @@ footer p {
   background-color: #fff;
   border-radius: 8px;
 }
-.equipment-content h3 {
+.equipment__desktop .equipment-content h3 {
   font-weight: 600;
   font-size: 30px;
   line-height: 1.33;
 }
-.equipment-content p {
+.equipment__desktop .equipment-content p {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.33;
   margin-top: 8px;
 }
-.equipment-content-stickers {
+.equipment__desktop .equipment-content-stickers {
   margin-top: 24px;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
-.equipment-content-stickers span {
+.equipment__desktop .equipment-content-stickers span {
   cursor: pointer;
   font-weight: 400;
   font-size: 16px;
@@ -6516,45 +6534,157 @@ footer p {
   border-radius: 4px;
   color: #101010;
 }
-.equipment-content-stickers span.active {
+.equipment__desktop .equipment-content-stickers span.active {
   background-color: #41474D;
   color: #fff;
 }
-.equipment-models h4 {
+.equipment__desktop .equipment-models h4 {
   font-weight: 600;
   font-size: 22px;
   line-height: 1.36;
 }
-.equipment-models-list {
+.equipment__desktop .equipment-models-list {
   display: flex;
   gap: clamp(1.25rem, -0.17rem + 2.27vw, 1.875rem);
 }
-.equipment-models-all {
+.equipment__desktop .equipment-models-all {
   display: flex;
   gap: 14px;
   align-items: center;
   color: #004786;
   cursor: pointer;
 }
-.equipment-models-all p {
+.equipment__desktop .equipment-models-all p {
   margin: 0;
 }
-.equipment-models-all:hover {
+.equipment__desktop .equipment-models-all:hover {
   color: #41474D;
 }
-.equipment-model {
+.equipment__desktop .equipment-model {
   border: 1px solid #D9D9D9;
   border-radius: 10px;
   flex: 1;
 }
-.equipment-model-info {
+.equipment__desktop .equipment-model-info {
   padding: 20px 12px;
 }
-.equipment-model-info p {
+.equipment__desktop .equipment-model-info p {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
 }
-.equipment-model img {
+.equipment__desktop .equipment-model img {
   min-height: 195px;
+}
+
+.equipment__mobile .equipmentMobile {
+  width: 100%;
+}
+.equipment__mobile .equipmentMobile-list {
+  display: flex;
+  flex-direction: column;
+}
+.equipment__mobile .equipmentMobile-item {
+  border-bottom: 1px solid #004786;
+}
+.equipment__mobile .equipmentMobile-item:last-child {
+  border-bottom: none;
+}
+.equipment__mobile .equipmentMobile-item svg {
+  transition: all 0.3s ease;
+}
+.equipment__mobile .equipmentMobile-item.active .equipmentMobile-content {
+  display: flex;
+}
+.equipment__mobile .equipmentMobile-header {
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.equipment__mobile .equipmentMobile-header.active svg {
+  transform: rotate(180deg);
+}
+.equipment__mobile .equipmentMobile-header p {
+  margin: 0;
+}
+.equipment__mobile .equipmentMobile-content {
+  display: none;
+  flex-direction: column;
+}
+.equipment__mobile .equipmentMobile-stickers {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.equipment__mobile .equipmentMobile-stickers span {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #C5C5C5;
+  padding: 3px 16px;
+  border-radius: 4px;
+  color: #101010;
+}
+.equipment__mobile .equipmentMobile-stickers span.active {
+  background-color: #41474D;
+  color: #fff;
+}
+.equipment__mobile .equipmentMobile-models {
+  overflow-x: auto;
+  margin-bottom: clamp(1.125rem, 0.656rem + 2.34vw, 1.5rem);
+}
+.equipment__mobile .equipmentMobile-models-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(0.875rem, 0.719rem + 0.78vw, 1rem) 0;
+  cursor: pointer;
+}
+.equipment__mobile .equipmentMobile-models-header h4 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.equipment__mobile .equipmentMobile-models-all {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  color: #004786;
+  cursor: pointer;
+}
+.equipment__mobile .equipmentMobile-models-all:hover {
+  color: #41474D;
+}
+.equipment__mobile .equipmentMobile-models-all p {
+  margin: 0;
+}
+.equipment__mobile .equipmentMobile-models-list {
+  display: flex;
+  gap: 16px;
+}
+.equipment__mobile .equipmentMobile-model {
+  flex: 1;
+  min-width: 262px;
+  border: 1px solid #C5C5C5;
+  border-radius: 10px;
+}
+.equipment__mobile .equipmentMobile-model img {
+  min-height: 180px;
+}
+.equipment__mobile .equipmentMobile-model-info {
+  padding: 20px 12px;
+}
+.equipment__mobile .equipmentMobile-model-info button {
+  width: 100%;
+}
+.equipment__mobile .equipmentMobile-model-info p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
 }/*# sourceMappingURL=style.css.map */

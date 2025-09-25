@@ -358,67 +358,526 @@
         <!--    @include('main.desktop_slider')-->
         <section id="equipment" class="equipment-section">
             <div class="section-blue">
-            <div class="container">
-                <div class="equipment">
-                    <h2>Виды техники</h2>
-                    <div class="equipment-wrapper">
-                        <div class="equipment-header">
-                            <ul>
-                                <li class="active">Серийная автотехника</li>
-                                <li>Пассажирская техника</li>
-                                <li>Грузовая техника</li>
-                                <li>Спец. техника</li>
-                                <li>Дорожно-коммунальная техника</li>
-                                <li>Прицепная техника</li>
-                            </ul>
-                            <button class="btn btn-blue-black askMe askMeSpec">Получить спецпредложение</button>
-                        </div>
-                        <div class="equipment-content">
-                            <div class="equipment-content-header">
-                                <h3>Серийная автотехника</h3>
-                                <p>Выберите подвид, чтобы увидеть модели</p>
-                                <div class="equipment-content-stickers">
-                                    <span>Тягачи</span>
-                                    <span>Самосвалы</span>
-                                    <span class="active">Бортовые автомобили</span>
-                                    <span>Шасси</span>
+                <div class="container">
+                    <div class="equipment__desktop">
+                        <div class="equipment">
+                            <h2>Виды техники</h2>
+                            <div class="equipment-wrapper">
+                                <div class="equipment-header">
+                                    <ul>
+                                        <li class="active">Серийная автотехника</li>
+                                        <li>Пассажирская техника</li>
+                                        <li>Грузовая техника</li>
+                                        <li>Спец. техника</li>
+                                        <li>Дорожно-коммунальная техника</li>
+                                        <li>Прицепная техника</li>
+                                    </ul>
+                                    <button class="btn btn-blue-black askMe askMeSpec">Получить спецпредложение</button>
                                 </div>
-                            </div>
-                            <div class="equipment-models">
-                                <h4>Популярные модели</h4>
-                                <div class="equipment-models-list">
-                                    <div class="equipment-model">
-                                        <img src="media/equipment/1.png" alt="equipment">
-                                        <div class="equipment-model-info">
-                                            <p>Модель 1</p>
-                                            <button class="btn btn-trnsp-black">Подробнее</button>
+                                <div class="equipment-content">
+                                    <div class="equipment-content-header">
+                                        <h3>Серийная автотехника</h3>
+                                        <p>Выберите подвид, чтобы увидеть модели</p>
+                                        <div class="equipment-content-stickers">
+                                            <span>Тягачи</span>
+                                            <span>Самосвалы</span>
+                                            <span class="active">Бортовые автомобили</span>
+                                            <span>Шасси</span>
                                         </div>
                                     </div>
-                                    <div class="equipment-model">
-                                        <img src="media/equipment/1.png" alt="equipment">
-                                        <div class="equipment-model-info">
-                                            <p>Модель 2</p>
-                                            <button class="btn btn-trnsp-black">Подробнее</button>
+                                    <div class="equipment-models">
+                                        <h4>Популярные модели</h4>
+                                        <div class="equipment-models-list">
+                                            <div class="equipment-model">
+                                                <img src="media/equipment/1.png" alt="equipment">
+                                                <div class="equipment-model-info">
+                                                    <p>Модель 1</p>
+                                                    <button class="btn btn-trnsp-black">Подробнее</button>
+                                                </div>
+                                            </div>
+                                            <div class="equipment-model">
+                                                <img src="media/equipment/1.png" alt="equipment">
+                                                <div class="equipment-model-info">
+                                                    <p>Модель 2</p>
+                                                    <button class="btn btn-trnsp-black">Подробнее</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="equipment-models-all">
+                                        <p>Все модели тягачей </p>
+                                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L6 6L0.999999 11" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="equipment-models-all">
-                                <p>Все модели тягачей </p>
-                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L6 6L0.999999 11" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-
                             </div>
                         </div>
                     </div>
 
+                    <div class="equipment__mobile">
+                        <div class="equipmentMobile">
+                            <div class="equipmentMobile-list">
+                                <div class="equipmentMobile-item">
+                                    <div class="equipmentMobile-header">
+                                        <p>Серийная автотехника</p>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9894 16C11.8247 16.0002 11.6616 15.9655 11.5094 15.8978C11.3572 15.8302 11.2189 15.731 11.1024 15.6059L6.18508 10.3199C6.06147 10.1717 5.99534 9.97829 6.00026 9.77934C6.00517 9.58039 6.08077 9.391 6.21152 9.25007C6.34227 9.10914 6.51825 9.02736 6.70334 9.02151C6.88843 9.01567 7.06858 9.0862 7.20681 9.21863L11.9894 14.359L16.772 9.21863C16.9086 9.07676 17.0917 8.99825 17.2817 9.00003C17.4717 9.0018 17.6534 9.08371 17.7878 9.22812C17.9221 9.37252 17.9983 9.56786 18 9.77207C18.0016 9.97628 17.9286 10.173 17.7966 10.3199L12.8792 15.6059C12.7624 15.7314 12.6236 15.8308 12.4709 15.8984C12.3182 15.9661 12.1546 16.0006 11.9894 16Z"
+                                                fill="#101010" />
+                                        </svg>
+                                    </div>
+                                    <div class="equipmentMobile-content">
+                                        <div class="equipmentMobile-stickers">
+                                            <span>Тягачи</span>
+                                            <span>Самосвалы</span>
+                                            <span class="active">Бортовые автомобили</span>
+                                            <span>Шасси</span>
+                                        </div>
+                                        <div class="equipmentMobile-models">
+                                            <div class="equipmentMobile-models-header">
+                                                <h4>Популярные модели</h4>
+                                                <div class="equipmentMobile-models-all">
+                                                    <p>Все модели </p>
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L6 6L0.999999 11" stroke="currentColor"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="equipmentMobile-models-list">
+                                                <div class="equipmentMobile-model">
+                                                    <img src="media/equipment/1.png" alt="equipment">
+                                                    <div class="equipmentMobile-model-info">
+                                                        <p>Модель 1</p>
+                                                        <button class="btn btn-trnsp-black">Подробнее</button>
+                                                    </div>
+                                                </div>
+                                                <div class="equipmentMobile-model">
+                                                    <img src="media/equipment/1.png" alt="equipment">
+                                                    <div class="equipmentMobile-model-info">
+                                                        <p>Модель 2</p>
+                                                        <button class="btn btn-trnsp-black">Подробнее</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2) Пассажирская техника -->
+                                <div class="equipmentMobile-item">
+                                    <div class="equipmentMobile-header">
+                                        <p>Пассажирская техника</p>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9894 16C11.8247 16.0002 11.6616 15.9655 11.5094 15.8978C11.3572 15.8302 11.2189 15.731 11.1024 15.6059L6.18508 10.3199C6.06147 10.1717 5.99534 9.97829 6.00026 9.77934C6.00517 9.58039 6.08077 9.391 6.21152 9.25007C6.34227 9.10914 6.51825 9.02736 6.70334 9.02151C6.88843 9.01567 7.06858 9.0862 7.20681 9.21863L11.9894 14.359L16.772 9.21863C16.9086 9.07676 17.0917 8.99825 17.2817 9.00003C17.4717 9.0018 17.6534 9.08371 17.7878 9.22812C17.9221 9.37252 17.9983 9.56786 18 9.77207C18.0016 9.97628 17.9286 10.173 17.7966 10.3199L12.8792 15.6059C12.7624 15.7314 12.6236 15.8308 12.4709 15.8984C12.3182 15.9661 12.1546 16.0006 11.9894 16Z"
+                                                fill="#101010" />
+                                        </svg>
+                                    </div>
+                                    <div class="equipmentMobile-content">
+                                        <div class="equipmentMobile-stickers">
+                                            <span>Городские автобусы НЕФАЗ </br> Большой класс</span>
+                                            <span>Городские автобусы НЕФАЗ </br>Средний класс</span>
+                                            <span>Пригородные автобусы НЕФАЗ</span>
+                                            <span>Междугородные автобусы НЕФАЗ</span>
+                                        </div>
+                                        <div class="equipmentMobile-models">
+                                            <div class="equipmentMobile-models-header">
+                                                <h4>Популярные модели</h4>
+                                                <div class="equipmentMobile-models-all">
+                                                    <p>Все модели </p>
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L6 6L0.999999 11" stroke="currentColor"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="equipmentMobile-models-list">
+                                                <div class="equipmentMobile-model">
+                                                    <img src="media/equipment/1.png" alt="Модель 1">
+                                                    <div class="equipmentMobile-model-info">
+                                                        <p>Модель 1</p>
+                                                        <button class="btn btn-trnsp-black">Подробнее</button>
+                                                    </div>
+                                                </div>
+                                                <div class="equipmentMobile-model">
+                                                    <img src="media/equipment/2.png" alt="Модель 2">
+                                                    <div class="equipmentMobile-model-info">
+                                                        <p>Модель 2</p>
+                                                        <button class="btn btn-trnsp-black">Подробнее</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 3) Грузовая техника (стикеров и моделей нет) -->
+                                <div class="equipmentMobile-item">
+                                    <div class="equipmentMobile-header">
+                                        <p>Грузовая техника</p>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9894 16C11.8247 16.0002 11.6616 15.9655 11.5094 15.8978C11.3572 15.8302 11.2189 15.731 11.1024 15.6059L6.18508 10.3199C6.06147 10.1717 5.99534 9.97829 6.00026 9.77934C6.00517 9.58039 6.08077 9.391 6.21152 9.25007C6.34227 9.10914 6.51825 9.02736 6.70334 9.02151C6.88843 9.01567 7.06858 9.0862 7.20681 9.21863L11.9894 14.359L16.772 9.21863C16.9086 9.07676 17.0917 8.99825 17.2817 9.00003C17.4717 9.0018 17.6534 9.08371 17.7878 9.22812C17.9221 9.37252 17.9983 9.56786 18 9.77207C18.0016 9.97628 17.9286 10.173 17.7966 10.3199L12.8792 15.6059C12.7624 15.7314 12.6236 15.8308 12.4709 15.8984C12.3182 15.9661 12.1546 16.0006 11.9894 16Z"
+                                                fill="#101010" />
+                                        </svg>
+                                    </div>
+                                    <div class="equipmentMobile-content">
+                                        <div class="equipmentMobile-stickers"></div>
+                                        <div class="equipmentMobile-models">
+                                            <div class="equipmentMobile-models-header">
+                                                <h4>Популярные модели</h4>
+                                                <div class="equipmentMobile-models-all">
+                                                    <p>Все модели </p>
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L6 6L0.999999 11" stroke="currentColor"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="equipmentMobile-models-list"><!-- пусто --></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 4) Спец. техника -->
+                                <div class="equipmentMobile-item">
+                                    <div class="equipmentMobile-header">
+                                        <p>Спец. техника</p>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9894 16C11.8247 16.0002 11.6616 15.9655 11.5094 15.8978C11.3572 15.8302 11.2189 15.731 11.1024 15.6059L6.18508 10.3199C6.06147 10.1717 5.99534 9.97829 6.00026 9.77934C6.00517 9.58039 6.08077 9.391 6.21152 9.25007C6.34227 9.10914 6.51825 9.02736 6.70334 9.02151C6.88843 9.01567 7.06858 9.0862 7.20681 9.21863L11.9894 14.359L16.772 9.21863C16.9086 9.07676 17.0917 8.99825 17.2817 9.00003C17.4717 9.0018 17.6534 9.08371 17.7878 9.22812C17.9221 9.37252 17.9983 9.56786 18 9.77207C18.0016 9.97628 17.9286 10.173 17.7966 10.3199L12.8792 15.6059C12.7624 15.7314 12.6236 15.8308 12.4709 15.8984C12.3182 15.9661 12.1546 16.0006 11.9894 16Z"
+                                                fill="#101010" />
+                                        </svg>
+                                    </div>
+                                    <div class="equipmentMobile-content">
+                                        <div class="equipmentMobile-stickers">
+                                            <span>Автомобили с КМУ</span>
+                                            <span>Автобетоносмесители</span>
+                                            <span>Фургоны</span>
+                                            <span>Вахтовые автобусы на шасси КАМАЗ</span>
+                                        </div>
+                                        <div class="equipmentMobile-models">
+                                            <div class="equipmentMobile-models-header">
+                                                <h4>Популярные модели</h4>
+                                                <div class="equipmentMobile-models-all">
+                                                    <p>Все модели </p>
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L6 6L0.999999 11" stroke="currentColor"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="equipmentMobile-models-list">
+                                                <div class="equipmentMobile-model">
+                                                    <img src="media/equipment/1.png" alt="Модель 1">
+                                                    <div class="equipmentMobile-model-info">
+                                                        <p>Модель 1</p>
+                                                        <button class="btn btn-trnsp-black">Подробнее</button>
+                                                    </div>
+                                                </div>
+                                                <div class="equipmentMobile-model">
+                                                    <img src="media/equipment/2.png" alt="Модель 2">
+                                                    <div class="equipmentMobile-model-info">
+                                                        <p>Модель 2</p>
+                                                        <button class="btn btn-trnsp-black">Подробнее</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 5) Дорожно-коммунальная техника -->
+                                <div class="equipmentMobile-item">
+                                    <div class="equipmentMobile-header">
+                                        <p>Дорожно-коммунальная техника</p>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9894 16C11.8247 16.0002 11.6616 15.9655 11.5094 15.8978C11.3572 15.8302 11.2189 15.731 11.1024 15.6059L6.18508 10.3199C6.06147 10.1717 5.99534 9.97829 6.00026 9.77934C6.00517 9.58039 6.08077 9.391 6.21152 9.25007C6.34227 9.10914 6.51825 9.02736 6.70334 9.02151C6.88843 9.01567 7.06858 9.0862 7.20681 9.21863L11.9894 14.359L16.772 9.21863C16.9086 9.07676 17.0917 8.99825 17.2817 9.00003C17.4717 9.0018 17.6534 9.08371 17.7878 9.22812C17.9221 9.37252 17.9983 9.56786 18 9.77207C18.0016 9.97628 17.9286 10.173 17.7966 10.3199L12.8792 15.6059C12.7624 15.7314 12.6236 15.8308 12.4709 15.8984C12.3182 15.9661 12.1546 16.0006 11.9894 16Z"
+                                                fill="#101010" />
+                                        </svg>
+                                    </div>
+                                    <div class="equipmentMobile-content">
+                                        <div class="equipmentMobile-stickers"></div>
+                                        <div class="equipmentMobile-models">
+                                            <div class="equipmentMobile-models-header">
+                                                <h4>Популярные модели</h4>
+                                                <div class="equipmentMobile-models-all">
+                                                    <p>Все модели </p>
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L6 6L0.999999 11" stroke="currentColor"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="equipmentMobile-models-list">
+                                                <div class="equipmentMobile-model">
+                                                    <img src="media/equipment/1.png" alt="Модель 1Дорожно">
+                                                    <div class="equipmentMobile-model-info">
+                                                        <p>Модель 1Дорожно</p>
+                                                        <button class="btn btn-trnsp-black">Подробнее</button>
+                                                    </div>
+                                                </div>
+                                                <div class="equipmentMobile-model">
+                                                    <img src="media/equipment/2.png" alt="Модель 2Дорожно">
+                                                    <div class="equipmentMobile-model-info">
+                                                        <p>Модель 2Дорожно</p>
+                                                        <button class="btn btn-trnsp-black">Подробнее</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 6) Прицепная техника -->
+                                <div class="equipmentMobile-item">
+                                    <div class="equipmentMobile-header">
+                                        <p>Прицепная техника</p>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9894 16C11.8247 16.0002 11.6616 15.9655 11.5094 15.8978C11.3572 15.8302 11.2189 15.731 11.1024 15.6059L6.18508 10.3199C6.06147 10.1717 5.99534 9.97829 6.00026 9.77934C6.00517 9.58039 6.08077 9.391 6.21152 9.25007C6.34227 9.10914 6.51825 9.02736 6.70334 9.02151C6.88843 9.01567 7.06858 9.0862 7.20681 9.21863L11.9894 14.359L16.772 9.21863C16.9086 9.07676 17.0917 8.99825 17.2817 9.00003C17.4717 9.0018 17.6534 9.08371 17.7878 9.22812C17.9221 9.37252 17.9983 9.56786 18 9.77207C18.0016 9.97628 17.9286 10.173 17.7966 10.3199L12.8792 15.6059C12.7624 15.7314 12.6236 15.8308 12.4709 15.8984C12.3182 15.9661 12.1546 16.0006 11.9894 16Z"
+                                                fill="#101010" />
+                                        </svg>
+                                    </div>
+                                    <div class="equipmentMobile-content">
+                                        <div class="equipmentMobile-stickers">
+                                            <span>Прицепы</span>
+                                            <span>Полуприцепы</span>
+                                        </div>
+                                        <div class="equipmentMobile-models">
+                                            <div class="equipmentMobile-models-header">
+                                                <h4>Популярные модели</h4>
+                                                <div class="equipmentMobile-models-all">
+                                                    <p>Все модели </p>
+                                                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L6 6L0.999999 11" stroke="currentColor"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="equipmentMobile-models-list">
+                                                <div class="equipmentMobile-model">
+                                                    <img src="media/equipment/1.png" alt="Модель 1Прицепная">
+                                                    <div class="equipmentMobile-model-info">
+                                                        <p>Модель 1Прицепная</p>
+                                                        <button class="btn btn-trnsp-black">Подробнее</button>
+                                                    </div>
+                                                </div>
+                                                <div class="equipmentMobile-model">
+                                                    <img src="media/equipment/2.png" alt="Модель 2Прицепная">
+                                                    <div class="equipmentMobile-model-info">
+                                                        <p>Модель 2Прицепная</p>
+                                                        <button class="btn btn-trnsp-black">Подробнее</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-blue-black askMe askMeSpec">Оставить заявку на подбор</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const tabs = document.querySelectorAll('.equipment-header ul li');
+                const contentHeader = document.querySelector('.equipment-content-header h3');
+                const contentText = document.querySelector('.equipment-content-header p');
+                const stickersWrap = document.querySelector('.equipment-content-stickers');
+                const modelsWrap = document.querySelector('.equipment-models-list');
+                const modelsTitle = document.querySelector('.equipment-models h4');
+                const allModelsEl = document.querySelector('.equipment-models-all p');
+
+                const equipment = [
+                    {
+                        name: 'Серийная автотехника',
+                        sticker: ['Тягачи', 'Самосвалы', 'Бортовые автомобили', 'Шасси'],
+                        models: [
+                            { name: 'Модель 1', img: 'media/equipment/1.png', sticker: 'Тягачи' },
+                            { name: 'Модель 2', img: 'media/equipment/2.png', sticker: 'Тягачи' },
+                            { name: 'Модель 3', img: 'media/equipment/3.png', sticker: 'Самосвалы' },
+                            { name: 'Модель 4', img: 'media/equipment/4.png', sticker: 'Шасси' },
+                        ]
+                    },
+                    {
+                        name: 'Пассажирская техника',
+                        sticker: [
+                            'Городские автобусы НЕФАЗ </br> Большой класс',
+                            'Городские автобусы НЕФАЗ </br>Средний класс',
+                            'Пригородные автобусы НЕФАЗ',
+                            'Междугородные автобусы НЕФАЗ'
+                        ],
+                        models: [
+                            { name: 'Модель 1', img: 'media/equipment/1.png', sticker: 'Пригородные автобусы НЕФАЗ' },
+                            { name: 'Модель 2', img: 'media/equipment/2.png', sticker: 'Междугородные автобусы НЕФАЗ' }
+                        ]
+                    },
+                    {
+                        name: 'Грузовая техника',
+                        sticker: [],
+                        models: []
+                    },
+                    {
+                        name: 'Спец. техника',
+                        sticker: ['Автомобили с КМУ', 'Автобетоносмесители', 'Фургоны', 'Вахтовые автобусы на шасси КАМАЗ'],
+                        models: [
+                            { name: 'Модель 1', img: 'media/equipment/1.png', sticker: 'Фургоны' },
+                            { name: 'Модель 2', img: 'media/equipment/2.png', sticker: 'Автобетоносмесители' }
+                        ]
+                    },
+                    {
+                        name: 'Дорожно-коммунальная техника',
+                        sticker: [],
+                        models: [
+                            { name: 'Модель 1Дорожно', img: 'media/equipment/1.png' },
+                            { name: 'Модель 2Дорожно', img: 'media/equipment/2.png' }
+                        ]
+                    },
+                    {
+                        name: 'Прицепная техника',
+                        sticker: ['Прицепы', 'Полуприцепы'],
+                        models: [
+                            { name: 'Модель 1Прицепная', img: 'media/equipment/1.png', sticker: 'Прицепы' },
+                            { name: 'Модель 2Прицепная', img: 'media/equipment/2.png', sticker: 'Полуприцепы' }
+                        ]
+                    },
+                ];
+
+
+                let activeTabIndex = 0;
+                let activeSticker = null; // строка или null
+
+                function normalizeLabel(htmlLabel) {
+                    // убираем теги <br> / </br> для сравнения текста
+                    const tmp = document.createElement('div');
+                    tmp.innerHTML = htmlLabel;
+                    return tmp.textContent.trim();
+                }
+
+                function setAllTitles(currEquipName, stickerText) {
+                    const normSticker = stickerText ? normalizeLabel(stickerText) : null;
+                    modelsTitle.textContent = 'Популярные модели';
+                    allModelsEl.textContent = normSticker ? `Все модели: ${normSticker.toLowerCase()}` : `Все модели: ${currEquipName.toLowerCase()}`;
+                }
+
+                function renderStickers(stickers) {
+                    stickersWrap.innerHTML = '';
+                    if (!stickers || stickers.length === 0) {
+                        stickersWrap.style.display = 'none';
+                        activeSticker = null;
+                        return;
+                    }
+                    stickersWrap.style.display = '';
+                    stickers.forEach((st, i) => {
+                        const span = document.createElement('span');
+                        span.innerHTML = st;
+                        if (i === 0 && activeSticker === null) activeSticker = st; // дефолт
+                        if (normalizeLabel(st) === normalizeLabel(activeSticker)) span.classList.add('active');
+                        stickersWrap.appendChild(span);
+                    });
+
+                    // навешиваем клики на стикеры
+                    stickersWrap.querySelectorAll('span').forEach(span => {
+                        span.addEventListener('click', () => {
+                            stickersWrap.querySelectorAll('span').forEach(s => s.classList.remove('active'));
+                            span.classList.add('active');
+                            activeSticker = span.innerHTML;
+                            renderModels(); // обновляем модели под выбранный стикер
+                        });
+                    });
+                }
+
+                function getFilteredModels() {
+                    const data = equipment[activeTabIndex];
+                    if (!data.models || data.models.length === 0) return [];
+                    // если стикера нет (либо раздел без стикеров) — показываем все
+                    if (!activeSticker) return data.models;
+                    const target = normalizeLabel(activeSticker);
+                    return data.models.filter(m => m.sticker ? normalizeLabel(m.sticker) === target : true);
+                }
+
+                function renderModels() {
+                    const data = equipment[activeTabIndex];
+                    const filtered = getFilteredModels();
+
+                    modelsWrap.innerHTML = '';
+                    if (filtered.length === 0) {
+                        modelsWrap.innerHTML = `<div class="equipment-model-empty">Нет моделей для выбранного подвида</div>`;
+                    } else {
+                        filtered.forEach(model => {
+                            const div = document.createElement('div');
+                            div.classList.add('equipment-model');
+                            div.innerHTML = `
+                                <img src="${model.img}" alt="${model.name}">
+                                <div class="equipment-model-info">
+                                    <p>${model.name}</p>
+                                    <button class="btn btn-trnsp-black">Подробнее</button>
+                                </div>
+                            `;
+                            modelsWrap.appendChild(div);
+                        });
+                    }
+                    setAllTitles(data.name, activeSticker);
+                }
+
+                function renderContent(index) {
+                    activeTabIndex = index;
+                    activeSticker = null; // при смене вкладки сбрасываем и выберем первый из списка
+                    const data = equipment[index];
+
+                    contentHeader.textContent = data.name;
+                    contentText.textContent = data.sticker && data.sticker.length ? 'Выберите подвид, чтобы увидеть модели' : '';
+
+                    renderStickers(data.sticker || []);
+                    renderModels();
+                }
+
+                // табы
+                tabs.forEach((li, idx) => {
+                    li.addEventListener('click', () => {
+                        tabs.forEach(el => el.classList.remove('active'));
+                        li.classList.add('active');
+                        renderContent(idx);
+                    });
+                });
+
+                // дефолт
+                renderContent(0);
+
+
+                const list = document.querySelector('.equipmentMobile-list');
+
+                if (!list) return;
+
+                list.addEventListener('click', (e) => {
+                    const item = e.target.closest('.equipmentMobile-item');
+                    if (!item || !list.contains(item)) return;
+                    item.classList.toggle('active'); // просто переключаем класс
+                });
+
+
+
+            });
+        </script>
 
         <section class="specials" id="specials" itemscope itemtype="https://schema.org/OfferCatalog">
             <div class="container d-flex flex-column">
