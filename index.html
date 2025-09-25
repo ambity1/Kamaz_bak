@@ -765,7 +765,7 @@
                                 <input id="phone" type="tel" class="form-control form-control-lg" placeholder="+7"
                                     inputmode="tel" required>
                             </div>
-                            <button type="submit" class="btn btn-primary promoForm__btn">
+                            <button type="submit" class="promoForm__btn">
                                 Отправить
                             </button>
                             <div class="form-check mt-3">
@@ -778,9 +778,7 @@
                                 </label>
                             </div>
                         </form>
-                        <div data-lastpass-icon-root=""
-                            style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -824,8 +822,10 @@
                                     <span itemprop="telephone">+7 (347) 200-20-15</span>
                                 </a>
                             </div>
+                            <a class="contacts__email" href="mailto:feedback@autolider-ufa.ru">
+                                feedback@autolider-ufa.ru
+                            </a>
 
-                            <p class="contacts__email">Почта: feedback@autolider-ufa.ru</p>
                             <p class="contacts__address">Центральный офис: Республика Башкортостан, р-н Иглинский,<br>
                                 км 1491 км 600 м<br>
                                 Самара – Уфа – Челябинск</p>
@@ -1112,154 +1112,83 @@
     </script>
 
     <!--@yield('content')-->
-    <footer class="d-flex flex-column">
-        <div class="footerTop container d-flex flex-column flex-md-row justify-content-between align-items-start">
-            <div class="footerTop-logo">
+    <footer class="">
+        <div class="footerTop container">
+            <div class="footerTop__logo">
                 <a href="/" class="d-flex flex-column align-items-start">
                     <img src="media/footer/logo_w.svg" alt="">
                 </a>
             </div>
-            <div class="footerTop-links">
-                <div>
-                    <p>О компании</p>
-                    <nav class="d-flex flex-column">
-                        <a href="/about">О компании</a>
-                        <a href="/contacts">Контакты</a>
-                    </nav>
-                </div>
-            </div>
-            <div class="footerTop-links">
-                <div>
-                    <p>Сервис и гарантии</p>
-                    <nav class="d-flex flex-column">
-                        <a href="/#specials" toblock="specials">Гарантия</a>
-                        <a class="askMe askMeTestDrive">Политика в области сервиса</a>
-                        <a class="askMe askMeConsultation">Гарантия на запчастные части</a>
-                        <a class="askMe askMeConsultation">Служба помощи клиентам</a>
-                        <a class="askMe askMeConsultation">Прайсы на услуги сервиса</a>
-                    </nav>
-                </div>
-            </div>
-            <div class="footerTop-links">
-                <div>
-                    <p>Каталог</p>
-                    <nav class="d-flex flex-column">
-                        <a href="/#specials" toblock="specials">Серийная автотехника</a>
-                        <a class="askMe askMeTestDrive">Пассажирская техника</a>
-                        <a class="askMe askMeConsultation">Спец. техника</a>
-                        <a class="askMe askMeConsultation">Дорожно-коммунальная техника</a>
-                        <a class="askMe askMeConsultation">Прицепная техника</a>
-                    </nav>
-                </div>
-            </div>
-            <div class="footerTop-links">
-                <div class="footerTop-contacts">
-                    <p>Контакты</p>
-                    <div class="footerTop-contacts--list">
-                        <div>
-                            <p>Сервисный центр</p>
-                            <p>+7 (347) 293-43-43</p>
-                        </div>
-                        <div>
-                            <p>Отдел продаж</p>
-                            <p>+7 (347) 200-20-15</p>
-                        </div>
-                        <a href="mailto:feedback@autolider-ufa.ru">
-                            feedback@autolider-ufa.ru
-                        </a>
+            <div class="footerTop-wrapper-common">
+                <div class="footerTop-wrapper1">
+                    <div class="footerTop__links footerTop__links--1">
+                        <p class="footerTop__subtitle" style="text-wrap: nowrap;">О компании</p>
+                        <nav class="d-flex flex-column">
+                            <a href="/about" style="text-wrap: nowrap;">О компании</a>
+                            <a href="/contacts">Контакты</a>
+                        </nav>
                     </div>
-                    <p>
-                        Республика Башкортостан, р-н Иглинский,
-                        км 1491 км 600 м
-                        Самара – Уфа – Челябинск
-                    </p>
+                    <div class="footerTop__links footerTop__links--2">
 
-                    <a class="btn btn-white-trnsp askMe askMeConsultation">Получить консультацию</a>
+                        <p class="footerTop__subtitle">Сервис и гарантии</p>
+                        <nav class="d-flex flex-column">
+                            <a href="/#specials" toblock="specials">Гарантия</a>
+                            <a class="askMe askMeTestDrive">Политика в области сервиса</a>
+                            <a class="askMe askMeConsultation">Гарантия на запчастные части</a>
+                            <a class="askMe askMeConsultation">Служба помощи клиентам</a>
+                            <a class="askMe askMeConsultation">Прайсы на услуги сервиса</a>
+                        </nav>
+
+                    </div>
+                </div>
+                <div class="footerTop-wrapper2">
+                    <div class="footerTop__links footerTop__links--3">
+                        <p class="footerTop__subtitle">Каталог</p>
+                        <nav class="d-flex flex-column">
+                            <a href="/#specials" toblock="specials">Серийная автотехника</a>
+                            <a class="askMe askMeTestDrive">Пассажирская техника</a>
+                            <a class="askMe askMeConsultation">Спец. техника</a>
+                            <a class="askMe askMeConsultation">Дорожно-коммунальная техника</a>
+                            <a class="askMe askMeConsultation">Прицепная техника</a>
+                        </nav>
+                    </div>
+                    <div class="footerTop__links footerTop__links--4">
+                        <p class="footerTop__subtitle">Контакты</p>
+                        <div class="footerTop__contacts">
+                            <div class="footerTop__numbers">
+                                <div>
+                                    <p class="footerTop__phone-title">Сервисный центр</p>
+                                    <a class="d-flex align-items-center footerTop__phone-link" href="tel:+73472934343">
+                                        <span itemprop="telephone">+7 (347) 293-43-43</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <p class="footerTop__phone-title">Отдел продаж</p>
+                                    <a class="d-flex align-items-center footerTop__phone-link" href="tel:+73472002015">
+                                        <span itemprop="telephone">+7 (347) 200-20-15</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="mailto:feedback@autolider-ufa.ru" class="footerTop__email">
+                                feedback@autolider-ufa.ru
+                            </a>
+                            <p class="footerTop__address">
+                                Республика Башкортостан, р-н Иглинский,<br>
+                                км 1491 км 600 м<br>
+                                Самара – Уфа – Челябинск
+                            </p>
+                        </div>
+
+
+                        <a class="footerTop__btn askMe askMeConsultation">Заказать звонок</a>
+
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footerBottom container d-flex flex-column flex-md-row justify-content-between">
-            <p class="policy"><a href="/policy">Политика конфиденциальности</a></p>
-            <a href="https://ambity.ru" target="_blank">Разработка сайта - Амбити</a>
         </div>
         <div class="footerBottom container">
-            @yield('footer-disclaimer')
-            <p class="text">Изложенная на данном сайте информация носит ознакомительный характер не является публичной
-                офертой, определяемой положениями статей 435 и 437 Гражданского Кодекса Российской Федерации.
-                Подробности
-                актуальных предложений доступны в салонах официальных дилеров JAECOO. Указанные на сайте цены,
-                комплектации
-                и технические характеристики, а также условия гарантии могут быть изменены в любое время без
-                специального
-                уведомления. Внешний вид товара, включая цвет, могут отличаться от представленных на фотографиях. Товар
-                сертифицирован.</p>
-            <p class="text">* Указана максимальная цена перепродажи с учетом всех выгод на автомобиль JAECOO J7 (Джей 7)
-                комплектации Urban (Урбан) 1.6 Turbo (Турбо) 2WD - 2 539 900 руб. на дату 01.01.2025 г., без учета
-                дополнительного оборудования или иных услуг, без учета предложений, программ или скидок официального
-                дилера.
-                Данная цена указана с учетом скидки дилера в размере 420 000 рублей, которая состоит из скидок:
-                программы
-                «Трейд-ин» 100 000 рублей, программы «Трейд-ин для своих» 100 000 рублей, программы «Зимняя выгода» 120
-                000
-                рублей и программы «Лучший кредит» 100 000 рублей. Подробности уточняйте у официальных дилеров, список
-                которых расположен по адресу www.jaecoo.ru. Не является офертой. 2 Указан максимальный размер выгоды
-                потребителя - 150 000 рублей, которая достигается за счет программы «Трейд-ин». Под скидкой по программе
-                «Трейд-ин» понимается единовременная и разовая выгода потребителю на все комплектации от максимальной
-                цены
-                перепродажи автомобиля, приобретаемого по Программе, при сдаче в зачёт его стоимости принадлежащего
-                потребителю любого автомобиля с пробегом. Условия программы уточняйте у официальных дилеров JAECOO. 3
-                Дополнительная скидка трейд-ин при сдаче автомобиля с пробегом марки: CHERY / EXEED / OMODA / JAECOO /
-                Audi
-                / Volkswagen / BMW / Land Rover / Mercedes-Benz / Skoda 4 Условия комбинируются с субсидированными
-                кредитными программами. Кредит предоставляют партнеры программы Jaecoo Finance: ПАО «Совкомбанк»,
-                Генеральная лицензия ЦБ РФ №963 от 5 декабря 2014 года; ПАО «РОСБАНК», Генеральная лицензия №2272 от
-                28.01.15 г.; ПАО «ВТБ», Генеральная лицензия №1000 от 08.07.15 г.; АО «Альфа Банк», Генеральная лицензия
-                №1326 от 16.01.15 г. 5 Выгода предоставляется при покупке нового автомобиля JAECOO J7 в кредит в любом
-                банке. Программа действует с 16.12.2024 г. по 31.01.2025 г. 6 Фактические цвета серийных автомобилей
-                могут
-                отличаться от цветов, показанных на изображениях. Возможное сочетание цветов кузова, отделки, крыши,
-                оборудование может быть опциональным. Наличие автомобилей, цены, цвета, модели, комплектации, оснащение
-                и
-                прочие подробности уточняйте у официальных дилеров JAECOO, список которых расположен на сайте jaecoo.ru.
-                Для
-                автомобилей, произведенных с 1 сентября 2024. Представленная информация по комплектации, оснащению,
-                цвету и
-                материалам носит предварительный характер, не является офертой, требует уточнения в отношении выбранного
-                автомобиля у дилера.</p>
-            <p class="text">** Указана максимальная цена перепродажи с учетом всех выгод на автомобиль JAECOO J8 (Джей
-                8)
-                комплектации Active (Актив) 2.0 Turbo (Турбо) 4WD - 3 949 000 руб. на дату 01.01.2025 г., без учета
-                дополнительного оборудования или иных услуг, без учета предложений, программ или скидок официального
-                дилера.
-                Данная цена указана с учетом скидки дилера в размере 650 000 рублей, которая состоит из скидок:
-                программы
-                «Трейд-ин» 175 000 рублей, программы «Трейд-ин для своих» 100 000 рублей, программы «Зимняя выгода» 200
-                000
-                рублей и программы «Лучший кредит» 175 000 рублей. Подробности уточняйте у официальных дилеров, список
-                которых расположен по адресу www.jaecoo.ru. Не является офертой. 3 Указан максимальный размер выгоды
-                потребителя - 175 000 рублей, которая достигается за счет программы «Трейд-ин». Под скидкой по программе
-                «Трейд-ин» понимается единовременная и разовая выгода потребителю на все комплектации от максимальной
-                цены
-                перепродажи автомобиля, приобретаемого по Программе, при сдаче в зачёт его стоимости принадлежащего
-                потребителю любого автомобиля с пробегом. Условия программы уточняйте у официальных дилеров JAECOO. 4
-                Дополнительная скидка трейд-ин при сдаче автомобиля с пробегом марки: CHERY / EXEED / OMODA / JAECOO /
-                Audi
-                / Volkswagen / BMW / Land Rover / Mercedes-Benz / Skoda 5 Условия комбинируются с субсидированными
-                кредитными программами. Кредит предоставляют партнеры программы Jaecoo Finance: ПАО «Совкомбанк»,
-                Генеральная лицензия ЦБ РФ №963 от 5 декабря 2014 года; ПАО «РОСБАНК», Генеральная лицензия №2272 от
-                28.01.15 г.; ПАО «ВТБ», Генеральная лицензия №1000 от 08.07.15 г.; АО «Альфа Банк», Генеральная лицензия
-                №1326 от 16.01.15 г. 6 Выгода предоставляется при покупке нового автомобиля JAECOO J8 в кредит в любом
-                банке. Программа действует с 16.12.2024 г. по 31.01.2025 г. 7 Фактические цвета серийных автомобилей
-                могут
-                отличаться от цветов, показанных на изображениях. Возможное сочетание цветов кузова, отделки, крыши,
-                оборудование может быть опциональным. Наличие автомобилей, цены, цвета, модели, комплектации, оснащение
-                и
-                прочие подробности уточняйте у официальных дилеров JAECOO, список которых расположен на сайте jaecoo.ru.
-                8
-                Натуральной кожей отделаны лицевые и центральные элементы сидений. Для автомобилей 2024 года
-                выпуска/модельного ряда. Представленная информация по комплектации, оснащению, цвету и материалам носит
-                предварительный характер, не является офертой, требует уточнения в отношении выбранного автомобиля у
-                дилера.</p>
+            <p>Официальный сайт компании КАМАЗ</p>
+            <p>ООО «АвтоЗапчасть КАМАЗ»</p>
         </div>
     </footer>
 
@@ -1509,7 +1438,7 @@
 </body>
 
 </html>
-@include('default.desktop_footer')
+<!-- @include('default.desktop_footer') -->
 <div class="fixed-content">
     <div class="cookie_block" id="cookieNotice">
         <div class="container">
