@@ -1,0 +1,70 @@
+/* Proxima Nova Black */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/proximanova_black.woff2') format('woff2'),
+       url('fonts/proximanova_black.woff') format('woff'),
+       url('fonts/proximanova_black.otf') format('opentype'),
+       url('fonts/proximanova_black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Proxima Nova Black Italic */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/proximanova_blackit.woff2') format('woff2'),
+       url('fonts/proximanova_blackit.woff') format('woff'),
+       url('fonts/proximanova_blackit.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Proxima Nova Bold */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/proximanova_bold.woff2') format('woff2'),
+       url('fonts/proximanova_bold.woff') format('woff'),
+       url('fonts/proximanova_bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Proxima Nova Bold Italic */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/proximanova_boldit.woff2') format('woff2'),
+       url('fonts/proximanova_boldit.woff') format('woff'),
+       url('fonts/proximanova_boldit.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Proxima Nova Extra Bold */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/proximanova_extrabold.woff2') format('woff2'),
+       url('fonts/proximanova_extrabold.woff') format('woff'),
+       url('fonts/proximanova_extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Proxima Nova Light */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/proximanova_light.woff2') format('woff2'),
+       url('fonts/proximanova_light.woff') format('woff'),
+       url('fonts/proximanova_light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Proxima Nova Regular */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/proximanova_regular.woff2') format('woff2'),
+       url('fonts/proximanova_regular.woff') format('woff'),
+       url('fonts/proximanova_regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
