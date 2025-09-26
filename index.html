@@ -354,6 +354,137 @@
                 },
             });
         </script>
+<section class='timer0' style="margin-top: 40px">
+    <div class='container'>
+        <div class='timer-container'>
+            <h2 class='timer-title text-center mb-0'>До конца акции осталось</h2>
+            <div class='timer-content d-flex flex-wrap justify-content-between'>
+                <div class='align-items-center flex-column'>
+                    <div id="timer" class='d-flex'></div>
+                    <div class='labels row d-flex'>
+                        <div class='col-3 text-center'>дня</div>
+                        <div class='col-3 text-center'>часов</div>
+                        <div class='col-3 text-center'>минут</div>
+                        <div class='col-3 text-center'>секунд</div>
+                    </div>
+                </div>
+                <form class='timer-form d-flex flex-column align-items-center' id='form' autocomplete="off">
+                    <input
+                            class='w-100 masked'
+                            name='phone'
+                            placeholder='Телефон'
+                            autocomplete="off"
+                            required
+
+                    />
+                    <button class='btn btn-black-trnsp w-100' type='submit' >Узнать цену</button>
+                    <div class="d-flex">
+                        <label class="d-flex align-items-start mt-2 checkbox-content" >
+                            <input type="checkbox" name="terms" required class="checkbox-input">
+                            <p>Я согласен с <a href="/policy" target="_blank">условиями обработки персональных данных</a></p>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Функция склонения числительных
+        function plural(n, one, few, many) {
+            n = Math.abs(n) % 100;
+            const n1 = n % 10;
+            if (n > 10 && n < 20) return many;
+            if (n1 === 1) return one;
+            if (n1 >= 2 && n1 <= 4) return few;
+            return many;
+        }
+
+        // Для глагола "остался/осталось"
+        function verbForDays(d) {
+            return d === 1 ? "остался" : "осталось";
+        }
+
+        // Следующая суббота
+        function getNextSaturday() {
+            const now = new Date();
+            const dayOfWeek = now.getDay();
+            const daysUntilNextSaturday = (6 - dayOfWeek + 7) % 7 || 7;
+            const nextSaturday = new Date(now);
+            nextSaturday.setDate(now.getDate() + daysUntilNextSaturday);
+            nextSaturday.setHours(23, 59, 59, 999);
+            return nextSaturday;
+        }
+
+        const labelEls = document.querySelectorAll(".labels .col-3");
+        const titleEl = document.querySelector(".timer-title");
+
+        function updateLabels({ d, h, m, s }) {
+            if (labelEls.length !== 4) return;
+            labelEls[0].textContent = plural(d, "день", "дня", "дней");
+            labelEls[1].textContent = plural(h, "час", "часа", "часов");
+            labelEls[2].textContent = plural(m, "минута", "минуты", "минут");
+            labelEls[3].textContent = plural(s, "секунда", "секунды", "секунд");
+
+            if (titleEl) {
+                titleEl.textContent = `До конца акции ${verbForDays(d)}`;
+            }
+        }
+
+        function startTimer() {
+            const now = new Date();
+            let targetDate = new Date("2024-11-02T15:59:59");
+            const twoHours = 2 * 60 * 60 * 1000;
+
+            if (now >= targetDate || targetDate - now < twoHours) {
+                targetDate = getNextSaturday();
+            }
+
+            if (now >= targetDate) {
+                document.querySelector(".timer0")?.style && (document.querySelector(".timer0").style.display = "none");
+                return;
+            }
+
+            const initialDiff = Math.floor((targetDate - now) / 1000);
+            const clock = $("#timer").FlipClock(initialDiff, {
+                clockFace: "DailyCounter",
+                countdown: true,
+            });
+
+            let tick = setInterval(() => {
+                const now2 = new Date();
+                let diff = Math.floor((targetDate - now2) / 1000);
+
+                if (diff <= 0) {
+                    targetDate = getNextSaturday();
+                    diff = Math.floor((targetDate - new Date()) / 1000);
+                    if (typeof clock.setTime === "function") clock.setTime(diff);
+                    if (typeof clock.start === "function") clock.start();
+                }
+
+                const d = Math.floor(diff / 86400);
+                const h = Math.floor((diff % 86400) / 3600);
+                const m = Math.floor((diff % 3600) / 60);
+                const s = diff % 60;
+                updateLabels({ d, h, m, s });
+            }, 1000);
+
+            const d0 = Math.floor(initialDiff / 86400);
+            const h0 = Math.floor((initialDiff % 86400) / 3600);
+            const m0 = Math.floor((initialDiff % 3600) / 60);
+            const s0 = initialDiff % 60;
+            updateLabels({ d: 1, h: h0, m: m0, s: s0 });
+        }
+
+        startTimer();
+    });
+</script>
+
+
+
+
 
         <!--    @include('main.desktop_slider')-->
         <section id="equipment" class="equipment-section">
@@ -1648,6 +1779,7 @@
         <div class="footerBottom container">
             <p>Официальный сайт компании КАМАЗ</p>
             <p>ООО «АвтоЗапчасть КАМАЗ»</p>
+            <p>Разработка сайта — <a href="https://ambity.ru/" target="_blank">Ambity</a> </p>
         </div>
     </footer>
 

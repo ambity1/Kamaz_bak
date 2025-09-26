@@ -37,8 +37,8 @@ body {
 
 /* Оформление состояния checked */
 .checkbox-input:checked {
-  background-color: #2C2F36;
-  border-color: #2C2F36;
+  background-color: #015AA8;
+  border-color: #015AA8;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
 }
 
@@ -49,12 +49,12 @@ body {
 
 /* Смена цвета границы при наведении */
 .checkbox-input:hover:not(:disabled) {
-  border-color: #2C2F36;
+  border-color: #015AA8;
 }
 
 /* Стили для чекбокса при фокусе */
 .checkbox-input:focus {
-  border-color: #2C2F36;
+  border-color: #015AA8;
   outline: none;
   box-shadow: 0 0 0 0.25rem rgba(44, 47, 54, 0.25);
 }
@@ -90,6 +90,22 @@ body {
 }
 .checkbox-content a {
   text-decoration: underline !important;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+  line-height: clamp(2rem, 1.714rem + 1.43vw, 3rem);
+  padding-bottom: 5px;
+  margin-bottom: clamp(1.5rem, 1.036rem + 2.32vw, 3.125rem);
+}
+.section-title::after {
+  content: "";
+  width: 160px;
+  height: 2px;
+  background-color: #41474d;
+  display: block;
+  margin-top: 5px;
 }
 
 .section-blue {
@@ -135,7 +151,7 @@ body {
 .btn-trnsp-black {
   color: #333940;
   background-color: transparent;
-  border: 2px solid #2C2F36;
+  border: 2px solid #101010;
 }
 .btn-trnsp-black:hover {
   color: #fff !important;
@@ -147,7 +163,7 @@ body {
   border: 2px solid #fff;
 }
 .btn-trnsp-white:hover {
-  color: #2C2F36 !important;
+  color: #101010 !important;
   background-color: #fff !important;
 }
 .btn-white-trnsp {
@@ -161,11 +177,11 @@ body {
 }
 .btn-black-trnsp {
   color: #fff;
-  background-color: #2C2F36;
-  border: 2px solid #2C2F36;
+  background-color: #101010;
+  border: 2px solid #101010;
 }
 .btn-black-trnsp:hover {
-  color: #2C2F36 !important;
+  color: #101010 !important;
   background-color: transparent !important;
 }
 .btn-red-trnsp {
@@ -193,7 +209,7 @@ header {
   top: 0;
 }
 header .header_upper {
-  background-color: #2C2F36;
+  background-color: #101010;
   padding: 10px 0;
 }
 header .header_upper > div, header .header_upper-contacts > div > div, header .header_upper-contacts > div > a {
@@ -506,11 +522,15 @@ footer p {
 }
 
 .footerTop {
-  padding: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem) 10px clamp(6.875rem, 6.161rem + 3.57vw, 9.375rem);
+  padding: clamp(1.875rem, 1.339rem + 2.68vw, 3.75rem) 10px clamp(6.875rem, 6.161rem + 3.57vw, 9.375rem) !important;
   border-bottom: #c5c5c5 1px solid;
   display: flex;
   justify-content: space-between;
   gap: 77px;
+}
+
+span[itemprop=telephone] {
+  white-space: nowrap;
 }
 
 .footerTop__logo {
@@ -527,7 +547,6 @@ footer p {
   display: flex;
   gap: clamp(1.875rem, 0.455rem + 2.27vw, 2.5rem);
   flex-grow: 1;
-  justify-content: end;
 }
 
 .footerTop-wrapper1 {
@@ -602,6 +621,10 @@ footer p {
 .footerBottom p {
   color: #41474d !important;
 }
+.footerBottom p a {
+  color: #41474D !important;
+  text-decoration: underline;
+}
 
 @media (max-width: 1200px) {
   .footerTop__logo {
@@ -627,7 +650,6 @@ footer p {
     display: flex;
     gap: 10px;
     flex-grow: 1;
-    justify-content: space-around;
   }
   .footerTop-wrapper1 {
     display: flex;
@@ -861,7 +883,7 @@ footer p {
   font-weight: 400;
   font-size: 18px;
   line-height: normal;
-  color: #2C2F36;
+  color: #101010;
   margin: 0;
 }
 .favs-item img {
@@ -909,7 +931,7 @@ footer p {
   font-size: 20px;
   line-height: 100%;
   color: white;
-  background: #2C2F36;
+  background: #101010;
   display: flex;
   gap: 12px;
   align-items: center;
@@ -940,7 +962,7 @@ footer p {
   }
 }
 .modelsSwiper .model-name {
-  color: #2C2F36;
+  color: #101010;
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
@@ -950,7 +972,7 @@ footer p {
   row-gap: 15px;
 }
 .modelsSwiper .model-nameWrap span {
-  color: #2C2F36;
+  color: #101010;
   font-size: 24px;
   font-weight: 400;
   line-height: 110%;
@@ -1238,7 +1260,7 @@ footer p {
   margin-bottom: 0;
 }
 .modelsSwiper .model .desc-chars .desc-chars_switcher_content > div .val {
-  color: #2C2F36;
+  color: #101010;
   font-size: 28px;
   font-weight: 700;
   line-height: normal;
@@ -1272,8 +1294,8 @@ footer p {
   margin: 0 !important;
   padding: 8px 13px;
   background-color: #fff;
-  border: 2px solid #2C2F36;
-  color: #2C2F36;
+  border: 2px solid #101010;
+  color: #101010;
   transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
   font-weight: 400;
@@ -1282,7 +1304,7 @@ footer p {
 }
 .modelsSwiper .swiper-pagination .swiper-pagination-bullet-active {
   cursor: unset;
-  background-color: #2C2F36;
+  background-color: #101010;
   color: #fff;
 }
 
@@ -1294,7 +1316,7 @@ footer p {
 .news-header h2,
 .models-header h2,
 .specialsOffers-header h2 {
-  color: #2C2F36;
+  color: #101010;
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
@@ -1383,7 +1405,7 @@ footer p {
   max-width: 470px;
 }
 .mobileApplication-info h2 {
-  color: #2C2F36;
+  color: #101010;
   font-size: 48px;
   font-weight: 700;
   line-height: normal;
@@ -1465,7 +1487,7 @@ footer p {
   width: 45%;
 }
 .aboutDealer-info h2 {
-  color: #2C2F36;
+  color: #101010;
   font-size: 48px;
   font-weight: 700;
   line-height: normal;
@@ -1504,7 +1526,7 @@ footer p {
   row-gap: 30px;
 }
 .services-content-el .info h3 {
-  color: #2C2F36;
+  color: #101010;
   font-size: 36px;
   font-weight: 700;
   line-height: normal;
@@ -1533,7 +1555,7 @@ footer p {
   flex: 1 0 0;
 }
 .contacts-info h2 {
-  color: #2C2F36;
+  color: #101010;
   font-size: 40px;
   font-weight: 700;
   line-height: 120%;
@@ -1542,7 +1564,7 @@ footer p {
   gap: 30px;
 }
 .contacts-info > div a:not(.btn) {
-  color: #2C2F36;
+  color: #101010;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -1602,13 +1624,13 @@ footer p {
   row-gap: 30px;
 }
 .modelColors-header h2 {
-  color: #2C2F36;
+  color: #101010;
   font-size: 64px;
   font-weight: 700;
   line-height: normal;
 }
 .modelColors-header p {
-  color: #2C2F36;
+  color: #101010;
   font-size: 24px;
   font-weight: 400;
   line-height: 110%;
@@ -1631,7 +1653,7 @@ footer p {
   color: #8C8C8C;
 }
 .modelColors .chars_content .val {
-  color: #2C2F36;
+  color: #101010;
   font-size: 32px;
   font-weight: 700;
   line-height: normal;
@@ -1669,7 +1691,7 @@ footer p {
   color: #FFFFFF;
   font-size: 20px;
   line-height: 135%;
-  background: #2C2F36;
+  background: #101010;
   padding: 12px 20px;
   justify-content: center;
   display: flex;
@@ -1760,7 +1782,7 @@ footer p {
   background: #8C8C8C;
 }
 .exteriorSwiper .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #2C2F36;
+  background: #101010;
 }
 .exteriorSwiper .swiper-slide {
   position: relative;
@@ -1884,7 +1906,7 @@ footer p {
   background: #8C8C8C;
 }
 .interiorSwiper .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #2C2F36;
+  background: #101010;
 }
 .interiorSwiper .swiper-slide {
   width: unset;
@@ -1929,7 +1951,7 @@ footer p {
   row-gap: 20px;
 }
 .technologies-grid-block .text h3 {
-  color: #2C2F36;
+  color: #101010;
   font-size: 24px;
   font-weight: 700;
   line-height: normal;
@@ -2214,7 +2236,7 @@ footer p {
   position: relative;
 }
 .newsAll-head h1 {
-  color: #2C2F36;
+  color: #101010;
   font-size: 48px;
   font-weight: 700;
   line-height: normal;
@@ -2912,7 +2934,7 @@ footer p {
     color: #FFFFFF;
     font-size: 20px;
     line-height: 135%;
-    background: #2C2F36;
+    background: #101010;
     border: 2px solid #FFFFFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
     padding: 8px 18px;
@@ -3229,7 +3251,7 @@ footer p {
     font-size: 14px;
     line-height: 135%;
     color: white;
-    background: #2C2F36;
+    background: #101010;
     padding: 6px 20px;
     justify-content: center;
     display: flex;
@@ -3272,7 +3294,7 @@ footer p {
     background: #8C8C8C;
   }
   .specials > div .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: #2C2F36;
+    background: #101010;
   }
   .specials-list {
     display: flex;
@@ -3584,7 +3606,7 @@ footer p {
     color: #FFFFFF;
     font-size: 14px;
     line-height: 135%;
-    background: #2C2F36;
+    background: #101010;
     border: 2px solid #FFFFFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
     padding: 8px 18px;
@@ -4095,11 +4117,12 @@ footer p {
   padding: 35px 0 90px;
 }
 .timer-container {
-  border: 3px solid #2C2F36;
+  border: 1px solid #015AA8;
   padding: 50px;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  border-radius: 10px;
 }
 @media (max-width: 1400px) {
   .timer-container {
@@ -4203,7 +4226,7 @@ footer p {
 .flip-clock-wrapper ul li a div div.inn {
   text-shadow: none;
   color: white;
-  background: #2C2F36 !important;
+  background: #015AA8 !important;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -4262,7 +4285,7 @@ footer p {
 .labels div {
   font-size: 16px;
   line-height: 130%;
-  color: #2C2F36;
+  color: #101010;
 }
 @media (min-width: 767.96px) {
   .labels div:nth-child(4) {
@@ -4327,13 +4350,20 @@ footer p {
   line-height: 150%;
   font-weight: 400;
   padding: 12px 15px;
-  border: 1px solid #a4a4a4;
+  border: 1px solid #C5C5C5;
   outline: none;
+  border-radius: 6px;
 }
 @media (max-width: 575.96px) {
   .timer-form input {
     font-size: 14px;
   }
+}
+.timer-form input::-moz-placeholder {
+  color: #C5C5C5;
+}
+.timer-form input::placeholder {
+  color: #C5C5C5;
 }
 @media (max-width: 767.96px) {
   .timer-form {
@@ -4354,7 +4384,7 @@ footer p {
 .autoInStockWrapper .autoInStock-header h2 {
   font-size: 48px;
   line-height: 110%;
-  color: #2C2F36;
+  color: #101010;
   font-weight: 700;
 }
 @media (max-width: 767.96px) {
@@ -4517,7 +4547,7 @@ footer p {
   font-size: 20px;
   line-height: 110%;
   font-weight: 500;
-  color: #2C2F36;
+  color: #101010;
 }
 .inStockCardSpecials {
   row-gap: 14px;
@@ -4530,7 +4560,7 @@ footer p {
   font-size: 16px;
   line-height: 110%;
   font-weight: 400;
-  color: #2C2F36;
+  color: #101010;
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -5378,7 +5408,7 @@ footer p {
   color: white;
 }
 .credit-container {
-  background-color: #2C2F36;
+  background-color: #101010;
   box-shadow: -1px 4px 47px 0px rgba(11, 69, 127, 0.0784313725);
   box-shadow: 0px 7px 47px 0px rgba(11, 69, 127, 0.0392156863);
 }
@@ -5760,7 +5790,7 @@ footer p {
 .meeting-marquee > div > div {
   width: 100%;
   display: flex;
-  background-color: #00657B;
+  background-color: #004786;
   box-sizing: border-box;
 }
 
@@ -6440,7 +6470,6 @@ footer p {
 .equipment__desktop .equipment {
   display: flex;
   flex-direction: column;
-  gap: 50px;
 }
 .equipment__desktop .equipment-section {
   padding: 90px 0;
